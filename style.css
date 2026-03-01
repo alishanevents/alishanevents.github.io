@@ -277,6 +277,40 @@ footer {
   font-size: 18px;
 }
 
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #F2DDA2;
+}
+
+.contact-form select {
+  width: 100%;
+  padding: 18px;
+  border-radius: 10px;
+  border: 2px solid #F2DDA2;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #F2DDA2;
+  color: #252A3C;
+  cursor: pointer;
+  transition: 0.3s ease;
+  appearance: none;
+}
+
+.contact-form select:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(242, 221, 162, 0.6);
+  border-color: #F2DDA2;
+}
+
+.contact-form select option {
+  background-color: #252A3C;
+  color: #F2DDA2;
+  font-size: 16px;
+}
+
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
   .footer-container {
