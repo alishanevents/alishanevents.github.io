@@ -327,4 +327,29 @@ footer {
   .social-icons {
     justify-content: center;
   }
+
+  #bio-paragraph{
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 450px){
+
+  .banner {
+    height: 300px;
+  }
+
+  .banner-overlay h1{
+    font-size: 30px;
+  }
+
+  .banner-overlay h2{
+    font-size: 20px;
+  }
+
+  .bio-paragraph{
+    text-align: center;
+  }
+
 }
