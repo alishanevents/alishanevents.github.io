@@ -1,130 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alishan Events</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alishan Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <header class="banner">
-    <div class="banner-overlay">
-      <h1>Alishan Events</h1>
-      <h2>We Crave Perfection</h2>
-      <!-- <a href="#catalog" class="btn">Explore Services</a> -->
-    </div>
-  </header>
+  <body>
+    <!-- WELCOME SECTION -->
 
-  <section class="services-scroll" id="scrollContainer">
-    <div class="scroll-container">
-      <div class="scroll-track">
-
-        <a href="wedding.html" class="event-btn">Wedding</a>
-        <a href="corporate.html" class="event-btn">Corporate</a>
-        <a href="birthday.html" class="event-btn">Birthday</a>
-        <a href="concert.html" class="event-btn">Concert</a>
-        <a href="festival.html" class="event-btn">Festival</a>
-        <a href="others.html" class="event-btn">Others</a>
-
-        <!-- Duplicate for seamless animation -->
-        <a href="wedding.html" class="event-btn">Wedding</a>
-        <a href="corporate.html" class="event-btn">Corporate</a>
-        <a href="birthday.html" class="event-btn">Birthday</a>
-        <a href="concert.html" class="event-btn">Concert</a>
-        <a href="festival.html" class="event-btn">Festival</a>
-        <a href="others.html" class="event-btn">Others</a>
-
+    <section class="welcome" id="welcome">
+      <div class="lang-toggle">
+        <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
+        <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
       </div>
-    </div>
-  </section>
-  
-  <hr>
 
-  <section class="falling-Stars">
+      <div class="welcome-content">
+        <h1 data-key="site_name">Alishan Events</h1>
+        <p data-key="tagline">We Crave Pefection</p>
 
-      <div class="about-catalog-section">
-          <div class="about">
-              <h2 style="text-align:center;">Start Your Event</h2>
+        <button
+          class="primary-btn"
+          onclick="location.href = '#works'"
+          data-key="explore_services"
+        >
+          Explore Services
+        </button>
+      </div>
+    </section>
 
-              <div class="cta-buttons">
-                  <a href="contact.html" class="cta-btn">Book Event</a>
-                  <a href="https://www.facebook.com/alishanevents.bd" target="_blank" class="cta-btn" id="fbp">Facebook Page</a>
-              </div>
+    <!-- SERVICES SECTION -->
 
+    <section class="services" id="services">
+      <h2 data-key="our_services">Our Services</h2>
+
+      <div class="services-wrapper">
+        <button class="scroll-btn left">&#10094;</button>
+
+        <div class="services-scroll" id="services-scroll">
+          <div class="service-card">
+            <h3 data-key="wedding_events">Wedding Events</h3>
+
+            <p data-key="wedding_description">
+              Luxury wedding planning with premium decoration and lighting.
+            </p>
+
+            <a href="wedding.html" class="card-btn" data-key="view_details"
+              >View Details</a
+            >
           </div>
+
+          <div class="service-card">
+            <h3 data-key="corporate_events">Corporate Events</h3>
+
+            <p data-key="corporate_description">
+              Professional conferences and corporate event management.
+            </p>
+
+            <a href="corporate.html" class="card-btn" data-key="view_details"
+              >View Details</a
+            >
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="birthday_events">Birthday Events</h3>
+
+            <p data-key="birthday_description">
+              Stylish and fun birthday celebrations with custom themes,
+              decoration, and entertainment.
+            </p>
+
+            <a href="birthday.html" class="card-btn" data-key="view_details"
+              >View Details</a
+            >
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="boro_somabesh">Large Gatherings</h3>
+
+            <p data-key="boro_somabesh_description">
+              Expert management of large-scale gatherings, social events, and
+              community programs with seamless execution.
+            </p>
+
+            <a href="gathering.html" class="card-btn" data-key="view_details"
+              >View Details</a
+            >
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="concert_and_parties">Concert & Parties</h3>
+
+            <p data-key="concert_and_parties_description">
+              Energetic concerts and unforgettable celebrations.
+            </p>
+
+            <a href="concert.html" class="card-btn" data-key="view_details"
+              >View Details</a
+            >
+          </div>
+        </div>
+
+        <button class="scroll-btn right">&#10095;</button>
       </div>
+    </section>
 
-      <div class="night">
+    <!-- BOOK EVENT SECTION -->
 
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-            
+    <section class="booking" id="booking">
+      <h2 data-key="book_your_event">Book Your Event</h2>
+
+      <button class="gold-btn" data-key="book_now">Book Now</button>
+    </section>
+
+    <!-- OUR WORKS SECTION -->
+
+    <section class="works" id="works">
+      <h2 data-key="some_of_our_works">Some of Our Works</h2>
+
+      <div class="works-grid">
+        <div class="work"><img src="images/dec1.png" alt="Decoration Image"></div>
+        <div class="work"><img src="images/dec2.jpg" alt="Decoration Image"></div>
+        <div class="work"><img src="images/dec3.jpg" alt="Decoration Image"></div>
       </div>
+    </section>
 
-  </section>
+    <footer class="footer" class="explore">
+      <div class="footer-top">
+        <div class="footer-section">
+          <h3>About Alishan Events</h3>
+          <p data-key="about_alishan_events_description">
+            We craft luxury weddings, corporate events, concerts, and
+            unforgettable celebrations with perfection.
+          </p>
+        </div>
 
-  <!-- <section class="about-catalog-section">
+        <div class="footer-section">
+          <h3 data-key="quick_links">Quick Links</h3>
+          <ul>
+            <li><a href="#welcome" data-key="home">Home</a></li>
+            <li><a href="#services" data-key="services">Services</a></li>
+            <li><a href="#works" data-key="gallery">Gallery</a></li>
+            <li><a href="booking.html" data-key="contact">Contact</a></li>
+          </ul>
+        </div>
 
-    <div class="about">
-      <h2 style="text-align:center;">Start Your Event</h2>
-
-      <div class="cta-buttons">
-        <a href="contact.html" class="cta-btn">Book Event</a>
-        <a href="https://www.facebook.com/alishanevents.bd" target="_blank" class="cta-btn">Facebook Page</a>
-      </div>
-
-    </div>
-    
-  </section> -->
-
-  <hr>
-
-  <!-- SAMPLE WORKS -->
-  <section class="sample-works">
-    <h2>Our Creations</h2>
-    <div class="works-grid">
-      <div class="work-card"><img src="images/dec1.png" alt="Sample 1"></div>
-      <div class="work-card"><img src="images/dec2.jpg" alt="Sample 2"></div>
-      <div class="work-card"><img src="images/dec3.jpg" alt="Sample 3"></div>
-    </div>
-  </section>
-
-  <hr>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <p>Email: alishanevents.bd@gmail.com</p>
-        <p>Phone: +8801745330205</p>
-      </div>
-      <div class="footer-section">
-        <h3>Location (Main Branch)</h3>
-        <p>East Brahmondi, Narsingdi Sadar, Narsingdi</p>
-      </div>
-      <div class="footer-section">
-        <h3>Location (Sub Branch)</h3>
-        <p>Sector 10, Uttara, Dhaka</p>
-      </div>
-      <div class="footer-section">
-        <h3>Connect with Us</h3>
-        <div class="social-icons">
-          <a href="#" target="_blank"><img src="images/facebookLogo.svg" alt="Facebook"></a>
-          <a href="#" target="_blank"><img src="images/instaramLogo.svg" alt="Instagram"></a>
-          <a href="#" target="_blank"><img src="images/whatsappLogo.svg" alt="WhatsApp"></a>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
+            <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
+            <a href="#" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt=""></a>
+          </div>
         </div>
       </div>
-    </div>
-    <hr id="footer-hr">
-    <p class="footer-bottom">© 2026 <span style="color: #F2DDA2; font-size: 16px;"><b>Alishan Events</b></span>. All Rights Reserved. Developed by <span style="color: #9027E3; font-size: 16px;"><b>RAMS Tech</b></span></p>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+      <div class="footer-bottom">
+        <p>
+          © 2026 <span style="color: #f1d586; font-size: 16px;"><b>Alishan Events</b></span>. All Rights Reserved. Developed by <span style="color: #651a9f; font-size: 16px;"><b>RAMS Tech
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

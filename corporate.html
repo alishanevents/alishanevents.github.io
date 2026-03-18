@@ -1,79 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weddings | Your Brand Name</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corporate Events | Alishan Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <section
+      class="welcome"
+      style="
+        padding: 100px 20px;
+        background: linear-gradient(125deg, #0b0c10, #ff6b35);
+      "
+    >
 
-  <a href="javascript:history.back()" class="back-btn">← Back</a>
-
-  <!-- BANNER -->
-  <header class="banner">
-    <div class="banner-overlay">
-      <h1>Weddings</h1>
-      <h2>Your Love, Our Canvas.</h2>
-      <a href="#samples" class="btn">See Our Work</a>
-    </div>
-  </header>
-
-  <!-- EVENT DESCRIPTION -->
-  <section class="event-description">
-    <h2>About Our Wedding Services</h2>
-    <p>We specialize in creating unforgettable weddings tailored to your unique style. From intimate ceremonies to grand celebrations, every detail is planned and executed with precision and elegance.</p>
-  </section>
-
-  <hr>
-
-  <!-- SAMPLE WORKS -->
-  <section class="sample-works" id="samples">
-    <h2>Our Creations</h2>
-    <div class="works-grid">
-      <div class="work-card"><img src="images/dec1.png" alt="Wedding Sample 1"></div>
-      <div class="work-card"><img src="images/dec2.jpg" alt="Wedding Sample 2"></div>
-      <div class="work-card"><img src="images/dec3.jpg" alt="Wedding Sample 3"></div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <a href="contact.html" class="btn">Book Your Event</a>
-  </section>
-
-  <hr>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <p>Email: alishanevents.bd@gmail.com</p>
-        <p>Phone: +8801745330205</p>
+    <a href="index.html" class="back-btn" data-key="back">← Back</a>
+      <div class="lang-toggle">
+        <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
+        <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
       </div>
-      <div class="footer-section">
-        <h3>Location (Main Branch)</h3>
-        <p>East Brahmondi, Narsingdi Sadar, Narsingdi</p>
+      <div class="welcome-content">
+        <h1 data-key="corporate_events">Corporate Events</h1>
+        <p data-key="corporate_events_description">
+          Professional corporate event planning with premium decor, audiovisual
+          solutions, and seamless coordination.
+        </p>
+        <button
+          class="primary-btn"
+          onclick="location.href = '#services'"
+          data-key="our_services"
+        >
+          Our Services
+        </button>
       </div>
-      <div class="footer-section">
-        <h3>Location (Sub Branch)</h3>
-        <p>Sector 10, Uttara, Dhaka</p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <h2 data-key="our_services">Our Services</h2>
+
+      <div class="services-wrapper">
+        <button class="scroll-btn left" data-key="scroll_left">&#10094;</button>
+
+        <div class="services-scroll" id="services-scroll">
+          <div class="service-card">
+            <h3 data-key="event_design">Event Design & Theme</h3>
+            <p data-key="event_design_desc">
+              Customized corporate event concepts with premium staging and
+              decor.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="catering">Catering & Hospitality</h3>
+            <p data-key="catering_desc">
+              Professional catering services for conferences, meetings, and gala
+              dinners.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="audiovisual">Audiovisual Solutions</h3>
+            <p data-key="audiovisual_desc">
+              High-quality sound, lighting, and visual production for a flawless
+              event.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="entertainment_corp">Entertainment & Networking</h3>
+            <p data-key="entertainment_corp_desc">
+              Live performances and team-building activities for corporate
+              engagement.
+            </p>
+          </div>
+        </div>
+
+        <button class="scroll-btn right" data-key="scroll_right">
+          &#10095;
+        </button>
       </div>
-      <div class="footer-section">
-        <h3>Connect with Us</h3>
-        <div class="social-icons">
-          <a href="#" target="_blank"><img src="images/facebookLogo.svg" alt="Facebook"></a>
-          <a href="#" target="_blank"><img src="images/instaramLogo.svg" alt="Instagram"></a>
-          <a href="#" target="_blank"><img src="images/whatsappLogo.svg" alt="WhatsApp"></a>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="works" id="works">
+      <h2 data-key="corporate_gallery">Corporate Event Gallery</h2>
+      <div class="works-grid">
+        <div class="work">
+          <img src="images/dec1.png" alt="Corporate Event Image" />
+        </div>
+        <div class="work">
+          <img src="images/dec2.jpg" alt="Corporate Event Image" />
+        </div>
+        <div class="work">
+          <img src="images/dec3.jpg" alt="Corporate Event Image" />
+        </div>
+
+        <div class="gold-btn-div" style="grid-column: 1 / -1;">
+      <button class="gold-btn" data-key="book_now" id="gold-btn">Book Now</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-section">
+          <h3>About Alishan Events</h3>
+          <p data-key="about_alishan_events_description">
+            We craft luxury weddings, corporate events, concerts, and
+            unforgettable celebrations with perfection.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3 data-key="quick_links">Quick Links</h3>
+          <ul>
+            <li><a href="index.html" data-key="home">Home</a></li>
+            <li><a href="#services" data-key="services">Services</a></li>
+            <li><a href="#works" data-key="gallery">Gallery</a></li>
+            <li><a href="booking.html" data-key="contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social" aria-label="Facebook"
+              ><img src="images/facebookLogo.svg" alt=""
+            /></a>
+            <a href="#" class="social" aria-label="Instagram"
+              ><img src="images/instaramLogo.svg" alt=""
+            /></a>
+            <a href="#" class="social" aria-label="WhatsApp"
+              ><img src="images/whatsappLogo.svg" alt=""
+            /></a>
+          </div>
         </div>
       </div>
-    </div>
-    <hr id="footer-hr">
-    <p class="footer-bottom">© 2026 <span style="color: #F2DDA2; font-size: 16px;"><b>Alishan Events</b></span>. All Rights Reserved. Developed by <span style="color: #9027E3; font-size: 16px;"><b>RAMS Tech</b></span></p>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+      <div class="footer-bottom">
+        <p>
+          © 2026
+          <span style="color: #f1d586; font-size: 16px"
+            ><b>Alishan Events</b></span
+          >. All Rights Reserved. Developed by
+          <span style="color: #651a9f; font-size: 16px"><b>RAMS Tech</b></span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

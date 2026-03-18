@@ -1,79 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weddings | Your Brand Name</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Events | Alishan Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <section class="welcome" style="padding: 100px 20px; background: linear-gradient(125deg, #FF6B35, #0B0C10);">
 
-  <a href="javascript:history.back()" class="back-btn">←</a>
+        <a href="index.html" class="back-btn" data-key="back">← Back</a>
 
-  <!-- BANNER -->
-  <header class="banner">
-    <div class="banner-overlay">
-      <h1>Weddings</h1>
-      <h2>Your Love, Our Canvas.</h2>
-      <a href="#samples" class="btn">See Our Work</a>
+        <div class="lang-toggle">
+        <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
+        <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
+      </div>
+      <div class="welcome-content">
+        <h1 data-key="wedding_events">Wedding Events</h1>
+        <p data-key="wedding_events_description">Exquisite wedding planning with premium décor, lighting, and bespoke event design</p>
+        <button class="primary-btn" onclick="location.href='#services'" data-key="our_services">Our Services</button>
+      </div>
+    </section>
+
+
+    <section class="services" id="services">
+      <h2 data-key="our_services">Our Services</h2>
+
+      <div class="services-wrapper">
+        <button class="scroll-btn left">&#10094;</button>
+
+        <div class="services-scroll" id="services-scroll">
+          <div class="service-card">
+            <h3 data-key="decor_theme">Decor & Theme</h3>
+            <p data-key="decor_desc">Custom luxury decor and theme design for your dream wedding.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="catering_cuisine">Catering & Cuisine</h3>
+            <p data-key="catering_desc">Premium multi-cuisine catering to impress your guests.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="photography_videography">Photography & Videography</h3>
+            <p data-key="photography_desc">Capture every magical moment with professional photography.</p>
+          </div>
+
+          <div class="service-card">
+            <h3 data-key="entertainment">Entertainment</h3>
+            <p data-key="entertainment_desc">Live music, DJs, and performers for an unforgettable celebration.</p>
+          </div>
+
+        </div>
+
+        <button class="scroll-btn right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="works" id="works">
+      <h2 data-key="wedding_gallery">Wedding Gallery</h2>
+      <div class="works-grid">
+        <div class="work"><img src="images/dec1.png" alt="Decoration Image"></div>
+        <div class="work"><img src="images/dec2.jpg" alt="Decoration Image"></div>
+        <div class="work"><img src="images/dec3.jpg" alt="Decoration Image"></div>
+
+        <div class="gold-btn-div" style="grid-column: 1 / -1;">
+      <button class="gold-btn" data-key="book_now" id="gold-btn">Book Now</button>
     </div>
-  </header>
 
-  <!-- EVENT DESCRIPTION -->
-  <section class="event-description">
-    <h2>About Our Wedding Services</h2>
-    <p>We specialize in creating unforgettable weddings tailored to your unique style. From intimate ceremonies to grand celebrations, every detail is planned and executed with precision and elegance.</p>
-  </section>
+    </section>
 
-  <hr>
+    <footer class="footer" class="explore">
+      <div class="footer-top">
+        <div class="footer-section">
+          <h3>About Alishan Events</h3>
+          <p data-key="about_alishan_events_description">
+            We craft luxury weddings, corporate events, concerts, and
+            unforgettable celebrations with perfection.
+          </p>
+        </div>
 
-  <!-- SAMPLE WORKS -->
-  <section class="sample-works" id="samples">
-    <h2>Our Creations</h2>
-    <div class="works-grid">
-      <div class="work-card"><img src="images/dec1.png" alt="Wedding Sample 1"></div>
-      <div class="work-card"><img src="images/dec2.jpg" alt="Wedding Sample 2"></div>
-      <div class="work-card"><img src="images/dec3.jpg" alt="Wedding Sample 3"></div>
-    </div>
-  </section>
+        <div class="footer-section">
+          <h3 data-key="quick_links">Quick Links</h3>
+          <ul>
+            <li><a href="index.html" data-key="home">Home</a></li>
+            <li><a href="#services" data-key="services">Services</a></li>
+            <li><a href="#works" data-key="gallery">Gallery</a></li>
+            <li><a href="booking.html" data-key="contact">Contact</a></li>
+          </ul>
+        </div>
 
-  <!-- CTA -->
-  <section class="cta">
-    <a href="contact.html" class="btn">Book Your Event</a>
-  </section>
-
-  <hr>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Contact</h3>
-        <p>Email: alishanevents.bd@gmail.com</p>
-        <p>Phone: +8801745330205</p>
-      </div>
-      <div class="footer-section">
-        <h3>Location (Main Branch)</h3>
-        <p>East Brahmondi, Narsingdi Sadar, Narsingdi</p>
-      </div>
-      <div class="footer-section">
-        <h3>Location (Sub Branch)</h3>
-        <p>Sector 10, Uttara, Dhaka</p>
-      </div>
-      <div class="footer-section">
-        <h3>Connect with Us</h3>
-        <div class="social-icons">
-          <a href="#" target="_blank"><img src="images/facebookLogo.svg" alt="Facebook"></a>
-          <a href="#" target="_blank"><img src="images/instaramLogo.svg" alt="Instagram"></a>
-          <a href="#" target="_blank"><img src="images/whatsappLogo.svg" alt="WhatsApp"></a>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
+            <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
+            <a href="#" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt=""></a>
+          </div>
         </div>
       </div>
-    </div>
-    <hr id="footer-hr">
-    <p class="footer-bottom">© 2026 <span style="color: #F2DDA2; font-size: 16px;"><b>Alishan Events</b></span>. All Rights Reserved. Developed by <span style="color: #9027E3; font-size: 16px;"><b>RAMS Tech</b></span></p>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+      <div class="footer-bottom">
+        <p>
+          © 2026 <span style="color: #f1d586; font-size: 16px;"><b>Alishan Events</b></span>. All Rights Reserved. Developed by <span style="color: #651a9f; font-size: 16px;"><b>RAMS Tech
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+  </body>
 </html>
