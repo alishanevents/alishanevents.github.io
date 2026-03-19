@@ -1,156 +1,151 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corporate Events | Alishan Events</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- HERO SECTION -->
-    <section
-      class="welcome"
-      style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate Events | Alishan Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HERO SECTION -->
+  <section class="welcome" style="
         padding: 100px 20px;
         background: linear-gradient(125deg, #0b0c10, #ff6b35);
-      "
-    >
+      ">
 
-    <a href="index.html" class="back-btn" data-key="back">← Back</a>
-      <div class="lang-toggle">
-        <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
-        <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
-      </div>
-      <div class="welcome-content">
-        <h1 data-key="corporate_events">Corporate Events</h1>
-        <p data-key="corporate_events_description">
-          Professional corporate event planning with premium decor, audiovisual
-          solutions, and seamless coordination.
-        </p>
-        <button
-          class="primary-btn"
-          onclick="location.href = '#services'"
-          data-key="our_services"
-        >
-          Our Services
-        </button>
-      </div>
-    </section>
+    <div class="logo">
+      <img src="images/whiteLogo.svg" alt="Alishan Events Logo" />
+    </div>
+    <div class="lang-toggle">
+      <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
+      <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
+    </div>
+    <div class="welcome-content">
+      <h1 data-key="corporate_events">Corporate Events</h1>
+      <p data-key="corporate_events_description">
+        Professional corporate event planning with premium decor, audiovisual
+        solutions, and seamless coordination.
+      </p>
+      <button class="primary-btn" onclick="location.href = '#services'" data-key="our_services">
+        Our Services
+      </button>
+    </div>
+  </section>
 
-    <!-- SERVICES -->
-    <section class="services" id="services">
-      <h2 data-key="our_services">Our Services</h2>
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2 data-key="our_services">Our Services</h2>
 
-      <div class="services-wrapper">
-        <button class="scroll-btn left" data-key="scroll_left">&#10094;</button>
+    <div class="services-wrapper">
+      <button class="scroll-btn left" data-key="scroll_left">&#10094;</button>
 
-        <div class="services-scroll" id="services-scroll">
-          <div class="service-card">
-            <h3 data-key="event_design">Event Design & Theme</h3>
-            <p data-key="event_design_desc">
-              Customized corporate event concepts with premium staging and
-              decor.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 data-key="catering">Catering & Hospitality</h3>
-            <p data-key="catering_desc">
-              Professional catering services for conferences, meetings, and gala
-              dinners.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 data-key="audiovisual">Audiovisual Solutions</h3>
-            <p data-key="audiovisual_desc">
-              High-quality sound, lighting, and visual production for a flawless
-              event.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 data-key="entertainment_corp">Entertainment & Networking</h3>
-            <p data-key="entertainment_corp_desc">
-              Live performances and team-building activities for corporate
-              engagement.
-            </p>
-          </div>
-        </div>
-
-        <button class="scroll-btn right" data-key="scroll_right">
-          &#10095;
-        </button>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="works" id="works">
-      <h2 data-key="corporate_gallery">Corporate Event Gallery</h2>
-      <div class="works-grid">
-        <div class="work">
-          <img src="images/dec1.png" alt="Corporate Event Image" />
-        </div>
-        <div class="work">
-          <img src="images/dec2.jpg" alt="Corporate Event Image" />
-        </div>
-        <div class="work">
-          <img src="images/dec3.jpg" alt="Corporate Event Image" />
-        </div>
-
-        <div class="gold-btn-div" style="grid-column: 1 / -1;">
-      <button class="gold-btn" data-key="book_now" id="gold-btn">Book Now</button>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-section">
-          <h3>About Alishan Events</h3>
-          <p data-key="about_alishan_events_description">
-            We craft luxury weddings, corporate events, concerts, and
-            unforgettable celebrations with perfection.
+      <div class="services-scroll" id="services-scroll">
+        <div class="service-card">
+          <h3 data-key="event_design">Event Design & Theme</h3>
+          <p data-key="event_design_desc">
+            Customized corporate event concepts with premium staging and
+            decor.
           </p>
         </div>
 
-        <div class="footer-section">
-          <h3 data-key="quick_links">Quick Links</h3>
-          <ul>
-            <li><a href="index.html" data-key="home">Home</a></li>
-            <li><a href="#services" data-key="services">Services</a></li>
-            <li><a href="#works" data-key="gallery">Gallery</a></li>
-            <li><a href="booking.html" data-key="contact">Contact</a></li>
-          </ul>
+        <div class="service-card">
+          <h3 data-key="catering">Catering & Hospitality</h3>
+          <p data-key="catering_desc">
+            Professional catering services for conferences, meetings, and gala
+            dinners.
+          </p>
         </div>
 
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="#" class="social" aria-label="Facebook"
-              ><img src="images/facebookLogo.svg" alt=""
-            /></a>
-            <a href="#" class="social" aria-label="Instagram"
-              ><img src="images/instaramLogo.svg" alt=""
-            /></a>
-            <a href="#" class="social" aria-label="WhatsApp"
-              ><img src="images/whatsappLogo.svg" alt=""
-            /></a>
-          </div>
+        <div class="service-card">
+          <h3 data-key="audiovisual">Audiovisual Solutions</h3>
+          <p data-key="audiovisual_desc">
+            High-quality sound, lighting, and visual production for a flawless
+            event.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3 data-key="entertainment_corp">Entertainment & Networking</h3>
+          <p data-key="entertainment_corp_desc">
+            Live performances and team-building activities for corporate
+            engagement.
+          </p>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>
-          © 2026
-          <span style="color: #f1d586; font-size: 16px"
-            ><b>Alishan Events</b></span
-          >. All Rights Reserved. Developed by
-          <span style="color: #651a9f; font-size: 16px"><b>RAMS Tech</b></span>
+      <button class="scroll-btn right" data-key="scroll_right">
+        &#10095;
+      </button>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="works" id="works">
+    <h2 data-key="corporate_gallery">Corporate Event Gallery</h2>
+    <div class="works-grid">
+      <div class="work">
+        <img src="images/dec1.png" alt="Corporate Event Image" />
+      </div>
+      <div class="work">
+        <img src="images/dec2.jpg" alt="Corporate Event Image" />
+      </div>
+      <div class="work">
+        <img src="images/dec3.jpg" alt="Corporate Event Image" />
+      </div>
+
+      <div class="gold-btn-div" style="grid-column: 1 / -1;">
+        <button class="gold-btn" data-key="book_now" id="gold-btn" onclick="location.href='booking.html'">Book
+          Now</button>
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer explore">
+    <div class="footer-top">
+      <div class="footer-section">
+        <img src="images/whiteLogo.svg" alt="Alishan Events Logo" class="footer-logo" />
+        <h3>About Alishan Events</h3>
+        <p data-key="about_alishan_events_description">
+          We craft luxury weddings, corporate events, concerts, and
+          unforgettable celebrations with perfection.
         </p>
       </div>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
+      <div class="footer-section">
+        <h3 data-key="quick_links">Quick Links</h3>
+        <ul>
+          <li><a href="#welcome" data-key="home">Home</a></li>
+          <li><a href="#services" data-key="services">Services</a></li>
+          <li><a href="#works" data-key="gallery">Gallery</a></li>
+          <li><a href="booking.html" data-key="contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
+          <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
+          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 <span style="color: #f1d586; font-size: 13px;"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span style="color: #ddab22; font-size: 13px;"><b>Alishan</b></span>
+        Developed by <span style="color: #651a9f; font-size: 13px;"><b>RAMS Tech</b>
+      </p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/8801926659041" target="_blank" class="whatsapp-float">
+    <img src="images/whatsappFloatingLogo1.svg" alt="WhatsApp" />
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

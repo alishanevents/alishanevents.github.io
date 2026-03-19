@@ -16,6 +16,78 @@ body {
   line-height: 1.6;
 }
 
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 8px rgba(249, 168, 38, 0.5));
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #31f278;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background: #26e171ae;
+}
+
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(42, 227, 110, 0.4);
+  animation: pulse 1s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
 /* Language */
 
 .lang-toggle {
@@ -27,7 +99,8 @@ body {
 /* Back */
 
 .back-btn {
-  position: absolute; /* stays at top-left even on scroll */
+  position: absolute;
+  /* stays at top-left even on scroll */
   top: 20px;
   left: 20px;
   padding: 10px 20px;
@@ -94,6 +167,7 @@ body {
   justify-content: center;
   margin-top: 30px;
 }
+
 /* ---------- SERVICES ---------- */
 .services {
   padding: 40px 8%;
@@ -184,6 +258,7 @@ body {
 .scroll-btn.left {
   left: -10px;
 }
+
 .scroll-btn.right {
   right: -10px;
 }
@@ -267,6 +342,12 @@ body {
   padding: 60px 8% 30px 8%;
 }
 
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
 .footer h3 {
   font-size: 20px;
   margin-bottom: 20px;
@@ -306,6 +387,8 @@ body {
 
 .social-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
 }
 
@@ -334,7 +417,7 @@ body {
 
 /* Booking */
 
-.booking {
+.bookingform {
   padding: 80px 8%;
   text-align: center;
   background: linear-gradient(135deg, #1a1d2b, #2c2f3a);
@@ -345,19 +428,19 @@ body {
   color: #fdf6e3;
 }
 
-.booking h2 {
+.bookingform h2 {
   font-size: 42px;
   margin-bottom: 20px;
   color: #f9a826;
 }
 
-.booking p {
+.bookingform p {
   font-size: 18px;
   margin-bottom: 35px;
   color: #fdf6e3;
 }
 
-.booking .contact-form {
+.bookingform .contact-form {
   display: grid;
   gap: 20px;
   max-width: 800px;
@@ -368,21 +451,21 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
-.booking .form-group {
+.bookingform .form-group {
   display: flex;
   flex-direction: column;
 }
 
-.booking .form-group label {
+.bookingform .form-group label {
   margin-bottom: 6px;
   font-weight: bold;
   color: #f9a826;
   font-size: 16px;
 }
 
-.booking .form-group input,
-.booking .form-group select,
-.booking .form-group textarea {
+.bookingform .form-group input,
+.bookingform .form-group select,
+.bookingform .form-group textarea {
   padding: 12px 16px;
   border-radius: 8px;
   border: 1px solid #444;
@@ -393,14 +476,14 @@ body {
   transition: 0.3s;
 }
 
-.booking .form-group input:focus,
-.booking .form-group select:focus,
-.booking .form-group textarea:focus {
+.bookingform .form-group input:focus,
+.bookingform .form-group select:focus,
+.bookingform .form-group textarea:focus {
   border-color: #f9a826;
   box-shadow: 0 0 10px #f9a82650;
 }
 
-.booking .gold-btn {
+.bookingform .gold-btn {
   width: 100%;
   padding: 16px;
   font-size: 18px;
@@ -413,12 +496,12 @@ body {
   transition: 0.3s;
 }
 
-.booking .gold-btn:hover {
+.bookingform .gold-btn:hover {
   background: #ff6b35;
   color: #fff;
 }
 
-.booking #result {
+.bookingform #result {
   text-align: center;
   font-size: 16px;
   margin-top: 15px;
@@ -430,6 +513,7 @@ body {
   .welcome h1 {
     font-size: 48px;
   }
+
   .welcome p {
     font-size: 18px;
   }
@@ -472,30 +556,55 @@ body {
     gap: 30px;
   }
 
-  .booking {
+  .bookingform {
     padding: 50px 4%;
   }
 
-  .booking h2 {
+  .bookingform h2 {
     font-size: 32px;
   }
 
-  .booking p {
+  .bookingform p {
     font-size: 15px;
   }
 
-  .booking .contact-form {
+  .bookingform .contact-form {
     padding: 20px;
   }
 
-  .booking .form-group input,
-  .booking .form-group select,
-  .booking .form-group textarea {
+  .bookingform .form-group input,
+  .bookingform .form-group select,
+  .bookingform .form-group textarea {
     font-size: 14px;
   }
 
-  .booking .gold-btn {
+  .bookingform .gold-btn {
     font-size: 16px;
     padding: 14px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .whatsapp-float {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-float img {
+    width: 27px;
+    height: 27px;
+  }
+
+  .social-icons {
+    justify-content: center; /* centers icons horizontally */
+    width: 100%;
+  }
+
+  .footer-section {
+    text-align: center;
   }
 }

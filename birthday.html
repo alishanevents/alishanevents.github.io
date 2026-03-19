@@ -9,7 +9,9 @@
   <body>
 
     <!-- BACK BUTTON -->
-    <a href="index.html" class="back-btn" data-key="back">← Back</a>
+    <div class="logo">
+      <img src="images/whiteLogo.svg" alt="Alishan Events Logo" />
+    </div>
 
     <!-- HERO SECTION -->
     <section class="welcome" style="padding: 100px 20px; background: linear-gradient(125deg, #FF6B35, #0B0C10);">
@@ -68,47 +70,54 @@
         <div class="work"><img src="images/dec3.jpg" alt="Birthday Event"></div>
 
         <div class="gold-btn-div" style="grid-column: 1 / -1;">
-          <button class="gold-btn" data-key="book_now" id="gold-btn">Book Now</button>
+          <button class="gold-btn" data-key="book_now" id="gold-btn" onclick="location.href='booking.html'">Book Now</button>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-section">
-          <h3>About Alishan Events</h3>
-          <p data-key="about_alishan_events_description">
-            We craft luxury weddings, corporate events, concerts, and unforgettable celebrations with perfection.
-          </p>
-        </div>
-
-        <div class="footer-section">
-          <h3 data-key="quick_links">Quick Links</h3>
-          <ul>
-            <li><a href="index.html" data-key="home">Home</a></li>
-            <li><a href="#services" data-key="services">Services</a></li>
-            <li><a href="#works" data-key="gallery">Gallery</a></li>
-            <li><a href="booking.html" data-key="contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
-            <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
-            <a href="#" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt=""></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>
-          © 2026 <span style="color: #f1d586; font-size: 16px;"><b>Alishan Events</b></span>. All Rights Reserved. Developed by <span style="color: #651a9f; font-size: 16px;"><b>RAMS Tech</b></span>
+    <footer class="footer explore">
+    <div class="footer-top">
+      <div class="footer-section">
+        <img src="images/whiteLogo.svg" alt="Alishan Events Logo" class="footer-logo" />
+        <h3>About Alishan Events</h3>
+        <p data-key="about_alishan_events_description">
+          We craft luxury weddings, corporate events, concerts, and
+          unforgettable celebrations with perfection.
         </p>
       </div>
-    </footer>
+
+      <div class="footer-section">
+        <h3 data-key="quick_links">Quick Links</h3>
+        <ul>
+          <li><a href="#welcome" data-key="home">Home</a></li>
+          <li><a href="#services" data-key="services">Services</a></li>
+          <li><a href="#works" data-key="gallery">Gallery</a></li>
+          <li><a href="booking.html" data-key="contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
+          <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
+          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 <span style="color: #f1d586; font-size: 13px;"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span style="color: #ddab22; font-size: 13px;"><b>Alishan</b></span>
+        Developed by <span style="color: #651a9f; font-size: 13px;"><b>RAMS Tech</b>
+      </p>
+    </div>
+  </footer>
+
+    <a href="https://wa.me/8801926659041" target="_blank" class="whatsapp-float">
+    <img src="images/whatsappFloatingLogo1.svg" alt="WhatsApp" />
+  </a>
 
     <script src="script.js"></script>
     
