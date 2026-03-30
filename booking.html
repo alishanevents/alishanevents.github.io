@@ -15,9 +15,18 @@
 
   <!-- HERO SECTION -->
   <section class="welcome" style="padding: 100px 20px; background: linear-gradient(125deg, #FF6B35, #0B0C10);">
-    <div class="lang-toggle">
-      <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
-      <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
+    <div class="lang-dropdown">
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="bn">Bangla - বাংলা</option>
+        <option value="ar">Arabic - العربية</option>
+        <option value="ur">Urdu - اردو</option>
+        <option value="hi">Hindi - हिन्दी</option>
+        <option value="zh">Chinese - 中文</option>
+        <option value="ja">Japanese - 日本語</option>
+        <option value="es">Spanish - Español</option>
+        <option value="de">German - Deutsch</option>
+      </select>
     </div>
     <div class="welcome-content">
       <h1 data-key="booking_page">Book Your Event</h1>
@@ -96,7 +105,7 @@
       <div class="footer-section">
         <h3 data-key="quick_links">Quick Links</h3>
         <ul>
-          <li><a href="#welcome" data-key="home">Home</a></li>
+          <li><a href="index.html" data-key="home">Home</a></li>
           <li><a href="#services" data-key="services">Services</a></li>
           <li><a href="#works" data-key="gallery">Gallery</a></li>
           <li><a href="booking.html" data-key="contact">Contact</a></li>

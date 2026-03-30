@@ -1033,6 +1033,149 @@ const translations = {
     choose_budget: "Budget auswählen",
     event_vision: "Erzählen Sie uns von Ihrer Idee",
   },
+
+  ja: {
+    site_name: "アリシャン・イベント",
+    tagline: "完璧を追求します",
+    explore_services: "サービスを見る",
+
+    our_services: "サービス一覧",
+    wedding_events: "ウェディングイベント",
+    wedding_description:
+      "高級な装飾と照明によるラグジュアリーなウェディングプランニング。",
+    corporate_events: "企業イベント",
+    corporate_description:
+      "プロフェッショナルな会議および企業イベントの管理。",
+    birthday_events: "誕生日イベント",
+    birthday_description:
+      "カスタムテーマ、装飾、エンターテイメントを備えたスタイリッシュで楽しい誕生日パーティー。",
+    boro_somabesh: "大規模イベント",
+    boro_somabesh_description:
+      "大規模な集会、社会イベント、コミュニティプログラムのスムーズな運営。",
+    concert_and_parties: "コンサート＆パーティー",
+    concert_and_parties_description:
+      "活気あるコンサートと忘れられない祝賀会。",
+    view_details: "詳細を見る",
+
+    book_your_event: "イベントを予約",
+    book_now: "今すぐ予約",
+
+    some_of_our_works: "実績紹介",
+    explore_more: "もっと見る",
+
+    about_alishan_events_description:
+      "私たちはラグジュアリーな結婚式、企業イベント、コンサート、そして忘れられない祝賀会を完璧に創り上げます。",
+
+    quick_links: "クイックリンク",
+    home: "ホーム",
+    services: "サービス",
+    gallery: "ギャラリー",
+    contact: "お問い合わせ",
+
+    footer_credit:
+      "© 2026 アリシャン・イベント。無断転載禁止。RAMS Tech による開発。",
+
+    wedding_events_description:
+      "高級装飾、照明、オーダーメイドのイベントデザインによる洗練されたウェディングプランニング。",
+    service_decor: "装飾＆テーマ",
+    decor_theme: "装飾＆テーマ",
+    decor_desc: "夢の結婚式のためのカスタム高級装飾とテーマデザイン。",
+    service_catering: "ケータリング＆料理",
+    catering_cuisine: "ケータリング＆料理",
+    catering_desc: "ゲストを魅了する多国籍の高級ケータリング。",
+    service_photography: "写真＆映像",
+    photography_videography: "写真＆映像",
+    photography_desc:
+      "プロフェッショナルな撮影で大切な瞬間をすべて記録します。",
+    service_entertainment: "エンターテイメント",
+    entertainment: "エンターテイメント",
+    entertainment_desc:
+      "ライブ音楽、DJ、パフォーマーで忘れられない時間を演出。",
+    wedding_gallery: "ウェディングギャラリー",
+
+    corporate_events_description:
+      "高級装飾、音響映像ソリューション、円滑な運営による企業イベント企画。",
+    event_design: "イベントデザイン＆テーマ",
+    event_design_desc:
+      "高品質なステージと装飾を備えたカスタム企業イベント企画。",
+    catering: "ケータリング＆ホスピタリティ",
+    catering_desc:
+      "会議やガラディナー向けのプロフェッショナルなケータリングサービス。",
+    audiovisual: "音響映像ソリューション",
+    audiovisual_desc:
+      "完璧なイベントのための高品質な音響・照明・映像制作。",
+    entertainment_corp: "エンターテイメント＆交流",
+    entertainment_corp_desc:
+      "企業向けのライブパフォーマンスとチームビルディング活動。",
+    corporate_gallery: "企業イベントギャラリー",
+
+    back: "← 戻る",
+
+    birthday_events_description:
+      "テーマ装飾、特注ケーキ、エンターテイメント付きの思い出に残る誕生日イベント。",
+    birthday_theme: "誕生日テーマ＆装飾",
+    birthday_theme_desc:
+      "忘れられない誕生日のためのカスタムテーマと豪華装飾。",
+    birthday_cake: "カスタムケーキ＆ケータリング",
+    birthday_cake_desc:
+      "美味しいケーキと高級ケータリングでゲストをおもてなし。",
+    birthday_photography: "写真＆映像",
+    birthday_photography_desc:
+      "楽しい瞬間を逃さないプロフェッショナル撮影。",
+    birthday_entertainment: "エンターテイメント",
+    birthday_entertainment_desc:
+      "あらゆる年齢層が楽しめるライブ演出とアクティビティ。",
+    birthday_gallery: "誕生日イベントギャラリー",
+
+    large_gatherings: "大規模イベント",
+    large_gatherings_description:
+      "高級装飾、物流、エンターテイメントを含む大規模イベントの円滑な運営。",
+    venue_setup: "会場設営＆装飾",
+    venue_setup_desc:
+      "大人数向けの広々とした会場と洗練された装飾。",
+    catering_large: "ケータリング＆ホスピタリティ",
+    catering_large_desc:
+      "多数のゲストに対応する多様な高品質メニュー。",
+    audio_lighting: "音響＆照明",
+    audio_lighting_desc:
+      "大規模イベント向けのプロフェッショナルな音響・照明・ステージ管理。",
+    event_entertainment: "エンターテイメント＆アクティビティ",
+    event_entertainment_desc:
+      "ライブパフォーマンスと参加型アクティビティで盛り上げます。",
+    large_gatherings_gallery: "大規模イベントギャラリー",
+
+    concert_events: "コンサート＆パーティー",
+    concert_events_description:
+      "本格的な演出、照明、エンターテイメントによる活気あるイベント。",
+    concert_production: "イベント制作",
+    concert_production_desc:
+      "ステージ、音響、照明を含むプロフェッショナルな制作。",
+    concert_catering: "ケータリング＆VIPサービス",
+    concert_catering_desc:
+      "参加者や出演者向けの特別なケータリングとVIP対応。",
+    concert_photography: "写真＆映像",
+    concert_photography_desc:
+      "高揚感あふれる瞬間をプロの撮影で記録。",
+    concert_entertainment: "エンターテイメント調整",
+    concert_entertainment_desc:
+      "ライブ、DJ、演出を含む総合エンターテイメント管理。",
+    concert_gallery: "コンサート＆パーティーギャラリー",
+
+    booking_page: "イベント予約",
+    booking_description:
+      "以下の情報をご入力いただくと、理想のイベントを一緒に計画いたします。",
+    start_journey: "私たちと一緒に始めましょう",
+    booking_instructions:
+      "フォームにご記入いただければ、詳細や日程についてご連絡いたします。",
+    full_name: "氏名",
+    email_address: "メールアドレス",
+    phone_number: "電話番号",
+    preferred_date: "希望日",
+    event_location: "イベント場所",
+    estimated_budget: "予算",
+    choose_budget: "予算範囲を選択",
+    event_vision: "イベントのイメージを教えてください",
+  },
 };
 
 // wedding.html
@@ -1075,6 +1218,8 @@ function setLanguage(lang) {
     const key = el.getAttribute("data-key");
     el.textContent = translations[lang][key];
   });
+
+  speakGreeting(lang);
 }
 
 // Load saved language
@@ -1114,3 +1259,61 @@ form.addEventListener("submit", function (e) {
       result.textContent = "Error submitting form.";
     });
 });
+
+// greetings
+
+// greetings
+
+function speakGreeting(lang) {
+  const messages = {
+    en: "Welcome to Alishan Events.",
+    bn: "আলিশান ইভেন্টে আপনাকে স্বাগতম।",
+    ar: "مرحبًا بكم في أليشان إيفنتس.",
+    hi: "अलीशान इवेंट्स में आपका स्वागत है।",
+    ur: "علیشان ایونٹس میں خوش آمدید۔",
+    ja: "アリシャン・イベントへようこそ。",
+    zh: "欢迎来到阿里山活动公司。",
+    es: "Bienvenido a Alishan Events.",
+    de: "Willkommen bei Alishan Events."
+  };
+
+  const utterance = new SpeechSynthesisUtterance(messages[lang] || messages["en"]);
+
+  const langCodes = {
+    en: "en-US",
+    bn: "bn-BD",
+    ar: "ar-SA",
+    hi: "hi-IN",
+    ur: "ur-PK",
+    ja: "ja-JP",
+    zh: "zh-CN",
+    es: "es-ES",
+    de: "de-DE"
+  };
+
+  utterance.lang = langCodes[lang] || "en-US";
+
+  const voices = speechSynthesis.getVoices();
+  const selectedVoice = voices.find(v => v.lang === utterance.lang);
+
+  if (selectedVoice) {
+    utterance.voice = selectedVoice;
+  }
+
+  utterance.rate = 0.9;
+  utterance.pitch = 1;
+
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utterance);
+}
+
+speechSynthesis.onvoiceschanged = () => {
+  console.log("Voices loaded");
+};
+
+
+window.onload = () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  speakGreeting(savedLang);
+};
+
