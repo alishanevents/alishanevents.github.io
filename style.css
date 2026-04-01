@@ -618,6 +618,60 @@ body.fade-in {
   transform: translateY(0);
 }
 
+/* ---------- CUSTOMER REVIEWS ---------- */
+.reviews {
+  padding: 90px 8%;
+  text-align: center;
+  background: linear-gradient(135deg, #0b0c10, #1a1d2b);
+}
+
+.reviews h2 {
+  font-size: 42px;
+  color: #f9a826;
+  margin-bottom: 50px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.review-card {
+  background: linear-gradient(135deg, #1a1d2b, #2c2f3a);
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  color: #fdf6e3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+.review-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.review-card h4 {
+  font-size: 16px;
+  color: #f9a826;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #f9a826;
+  font-size: 18px;
+}
+
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
   .welcome h1 {

@@ -158,6 +158,13 @@ const translations = {
     estimated_budget: "Estimated Budget",
     choose_budget: "Choose Your Budget Range",
     event_vision: "Tell Us About Your Vision",
+    reviews_title: "What Our Customers Say",
+    review1_text: "Alishan Events made my wedding unforgettable! Highly recommend.",
+    review1_rating: "⭐⭐⭐⭐⭐",
+    review2_text: "Professional, timely, and creative. The event went smoothly thanks to them.",
+    review2_rating: "⭐⭐⭐⭐⭐",
+    review3_text: "Amazing decorations and excellent customer service. Will use again!",
+    review3_rating: "⭐⭐⭐⭐⭐",
   },
 
   bn: {
@@ -296,6 +303,13 @@ const translations = {
     estimated_budget: "অনুমানিত বাজেট",
     choose_budget: "আপনার বাজেট সীমা নির্বাচন করুন",
     event_vision: "আপনার ধারণা আমাদের জানান",
+    reviews_title: "আমাদের গ্রাহকদের মতামত",
+    review1_text: "আলিশান ইভেন্টস আমার বিয়েটিকে অসাধারণ করে তুলেছে! অত্যন্ত সুপারিশ করছি।",
+    review1_rating: "⭐⭐⭐⭐⭐",
+    review2_text: "পেশাদার, সময়মত এবং সৃজনশীল। ইভেন্টটি তাদের কারণে সুন্দরভাবে সম্পন্ন হয়েছে।",
+    review2_rating: "⭐⭐⭐⭐⭐",
+    review3_text: "দারুন সজ্জা এবং চমৎকার গ্রাহক সেবা। আবার ব্যবহার করব!",
+    review3_rating: "⭐⭐⭐⭐⭐",
   },
 };
 
