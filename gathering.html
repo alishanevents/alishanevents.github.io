@@ -9,28 +9,20 @@
 </head>
 
 <body>
+  <div id="page-transition"></div>
   <!-- BACK BUTTON -->
   <div class="logo">
-      <img src="images/whiteLogo.svg" alt="Alishan Events Logo" />
-    </div>
+    <img src="images/whiteLogo.svg" alt="Alishan Events Logo" />
+  </div>
 
   <!-- HERO SECTION -->
   <section class="welcome" style="
         padding: 100px 20px;
         background: linear-gradient(125deg, #1f8a70, #0b0c10);
       ">
-    <div class="lang-dropdown">
-      <select id="languageSelect">
-        <option value="en">English</option>
-        <option value="bn">Bangla - বাংলা</option>
-        <option value="ar">Arabic - العربية</option>
-        <option value="ur">Urdu - اردو</option>
-        <option value="hi">Hindi - हिन्दी</option>
-        <option value="zh">Chinese - 中文</option>
-        <option value="ja">Japanese - 日本語</option>
-        <option value="es">Spanish - Español</option>
-        <option value="de">German - Deutsch</option>
-      </select>
+    <div class="lang-toggle">
+      <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
+      <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
     </div>
     <div class="welcome-content">
       <h1 data-key="large_gatherings">Large Gatherings</h1>
@@ -140,14 +132,16 @@
         <div class="social-icons">
           <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
           <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
-          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt=""></a>
+          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg"
+              alt=""></a>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
       <p>
-        © 2026 <span style="color: #f1d586; font-size: 13px;"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span style="color: #ddab22; font-size: 13px;"><b>Alishan</b></span>
+        © 2026 <span style="color: #f1d586; font-size: 13px;"><b>Alishan Events</b></span>. All Rights Reserved. Sub
+        brand by <span style="color: #ddab22; font-size: 13px;"><b>Alishan</b></span>
         Developed by <span style="color: #651a9f; font-size: 13px;"><b>RAMS Tech</b>
       </p>
     </div>

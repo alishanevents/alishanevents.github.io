@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Booking | Alishan Events</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <div id="page-transition"></div>
 
   <!-- BACK BUTTON -->
   <div class="logo">
-      <img src="images/whiteLogo.svg" alt="Alishan Events Logo" />
-    </div>
+    <img src="images/whiteLogo.svg" alt="Alishan Events Logo" />
+  </div>
 
   <!-- HERO SECTION -->
   <section class="welcome" style="padding: 100px 20px; background: linear-gradient(125deg, #FF6B35, #0B0C10);">
-    <div class="lang-dropdown">
-      <select id="languageSelect">
-        <option value="en">English</option>
-        <option value="bn">Bangla - বাংলা</option>
-        <option value="ar">Arabic - العربية</option>
-        <option value="ur">Urdu - اردو</option>
-        <option value="hi">Hindi - हिन्दी</option>
-        <option value="zh">Chinese - 中文</option>
-        <option value="ja">Japanese - 日本語</option>
-        <option value="es">Spanish - Español</option>
-        <option value="de">German - Deutsch</option>
-      </select>
+    <div class="lang-toggle">
+      <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
+      <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
     </div>
     <div class="welcome-content">
       <h1 data-key="booking_page">Book Your Event</h1>
-      <p data-key="booking_description">Share your details below and we will help plan your perfect celebration with our premium services.</p>
+      <p data-key="booking_description">Share your details below and we will help plan your perfect celebration with our
+        premium services.</p>
     </div>
   </section>
 
   <!-- BOOKING FORM SECTION -->
   <section class="bookingform" style="padding: 80px 8%;">
     <h2 data-key="start_journey">Start Your Journey With Us</h2>
-    <p data-key="booking_instructions">Fill out the form and we’ll contact you to discuss your event details, availability, and ideas.</p>
+    <p data-key="booking_instructions">Fill out the form and we’ll contact you to discuss your event details,
+      availability, and ideas.</p>
 
     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="db1a0b60-4aef-416b-aa5a-d14ae4933194">
@@ -117,25 +113,27 @@
         <div class="social-icons">
           <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
           <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
-          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt=""></a>
+          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg"
+              alt=""></a>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
       <p>
-        © 2026 <span style="color: #f1d586; font-size: 13px;"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span style="color: #ddab22; font-size: 13px;"><b>Alishan</b></span>
+        © 2026 <span style="color: #f1d586; font-size: 13px;"><b>Alishan Events</b></span>. All Rights Reserved. Sub
+        brand by <span style="color: #ddab22; font-size: 13px;"><b>Alishan</b></span>
         Developed by <span style="color: #651a9f; font-size: 13px;"><b>RAMS Tech</b>
       </p>
     </div>
   </footer>
 
-    <a href="https://wa.me/8801926659041" target="_blank" class="whatsapp-float">
+  <a href="https://wa.me/8801926659041" target="_blank" class="whatsapp-float">
     <img src="images/whatsappFloatingLogo1.svg" alt="WhatsApp" />
   </a>
 
   <script src="script.js"></script>
 
-  </body>
+</body>
 
-  </html>
+</html>

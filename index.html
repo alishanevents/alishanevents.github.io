@@ -5,10 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alishan Events</title>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Baloo+Da+2:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div id="page-transition"></div>
+
   <!-- WELCOME SECTION -->
 
   <section class="welcome" id="welcome">
@@ -17,28 +21,14 @@
       <img src="images/MaroonLogo.svg" alt="Alishan Events Logo" />
     </div>
 
-    <!-- <div class="lang-toggle">
+    <div class="lang-toggle">
       <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
       <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
-    </div> -->
-
-    <div class="lang-dropdown">
-      <select id="languageSelect">
-        <option value="en">English</option>
-        <option value="bn">Bangla - বাংলা</option>
-        <option value="ar">Arabic - العربية</option>
-        <option value="ur">Urdu - اردو</option>
-        <option value="hi">Hindi - हिन्दी</option>
-        <option value="zh">Chinese - 中文</option>
-        <option value="ja">Japanese - 日本語</option>
-        <option value="es">Spanish - Español</option>
-        <option value="de">German - Deutsch</option>
-      </select>
     </div>
 
     <div class="welcome-content">
-      <h1 data-key="site_name">Alishan Events</h1>
-      <p data-key="tagline">We Crave Pefection</p>
+      <h1 class="reveal" data-key="site_name">Alishan Events</h1>
+      <p class="reveal" data-key="tagline">We Crave Pefection</p>
 
       <button class="primary-btn" onclick="location.href = '#works'" data-key="explore_services">
         Explore Services
@@ -55,7 +45,7 @@
       <button class="scroll-btn left">&#10094;</button>
 
       <div class="services-scroll" id="services-scroll">
-        <div class="service-card">
+        <div class="service-card reveal">
           <h3 data-key="wedding_events">Wedding Events</h3>
 
           <p data-key="wedding_description">
@@ -65,7 +55,7 @@
           <a href="wedding.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
-        <div class="service-card">
+        <div class="service-card reveal">
           <h3 data-key="corporate_events">Corporate Events</h3>
 
           <p data-key="corporate_description">
@@ -75,7 +65,7 @@
           <a href="corporate.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
-        <div class="service-card">
+        <div class="service-card reveal">
           <h3 data-key="birthday_events">Birthday Events</h3>
 
           <p data-key="birthday_description">
@@ -86,7 +76,7 @@
           <a href="birthday.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
-        <div class="service-card">
+        <div class="service-card reveal">
           <h3 data-key="boro_somabesh">Large Gatherings</h3>
 
           <p data-key="boro_somabesh_description">
@@ -97,7 +87,7 @@
           <a href="gathering.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
-        <div class="service-card">
+        <div class="service-card reveal">
           <h3 data-key="concert_and_parties">Concert & Parties</h3>
 
           <p data-key="concert_and_parties_description">
@@ -179,6 +169,7 @@
   </a>
 
   <script src="script.js"></script>
+
 </body>
 
 </html>
