@@ -165,6 +165,7 @@ const translations = {
     review2_rating: "⭐⭐⭐⭐⭐",
     review3_text: "Amazing decorations and excellent customer service. Will use again!",
     review3_rating: "⭐⭐⭐⭐⭐",
+    more_reviews: "More Reviews"
   },
 
   bn: {
@@ -310,10 +311,21 @@ const translations = {
     review2_rating: "⭐⭐⭐⭐⭐",
     review3_text: "দারুন সজ্জা এবং চমৎকার গ্রাহক সেবা। আবার ব্যবহার করব!",
     review3_rating: "⭐⭐⭐⭐⭐",
+    more_reviews: "অন্যান্য রিভিউ",
   },
 };
 
 const languageSelect = document.getElementById("languageSelect");
+
+function toggleLang() {
+  const isChecked = document.getElementById("switch-yes-no").checked;
+
+  if (isChecked) {
+    setLang('bn'); // checked = BN
+  } else {
+    setLang('en'); // unchecked = EN
+  }
+}
 
 function setLang(lang) {
 
@@ -351,9 +363,9 @@ function setLang(lang) {
 
   }, 200);
 
-  // Button highlight
-  document.getElementById("en").style.opacity = lang === "en" ? "1" : "0.5";
-  document.getElementById("bn").style.opacity = lang === "bn" ? "1" : "0.5";
+  // // Button highlight
+  // document.getElementById("en").style.opacity = lang === "en" ? "1" : "0.5";
+  // document.getElementById("bn").style.opacity = lang === "bn" ? "1" : "0.5";
 }
 
 document.addEventListener("DOMContentLoaded", () => {

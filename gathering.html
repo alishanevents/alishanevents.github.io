@@ -20,9 +20,14 @@
         padding: 100px 20px;
         background: linear-gradient(125deg, #1f8a70, #0b0c10);
       ">
-    <div class="lang-toggle">
-      <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
-      <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
+    <div class="lang-switch-container">
+      <div class="switch-wrapper">
+        <label class="rocker rocker-small" for="switch-yes-no">
+          <input type="checkbox" id="switch-yes-no" onchange="toggleLang()">
+          <span class="switch-left">BN</span>
+          <span class="switch-right">EN</span>
+        </label>
+      </div>
     </div>
     <div class="welcome-content">
       <h1 data-key="large_gatherings">Large Gatherings</h1>
@@ -120,7 +125,7 @@
       <div class="footer-section">
         <h3 data-key="quick_links">Quick Links</h3>
         <ul>
-          <li><a href="#welcome" data-key="home">Home</a></li>
+          <li><a href="index.html" data-key="home">Home</a></li>
           <li><a href="#services" data-key="services">Services</a></li>
           <li><a href="#works" data-key="gallery">Gallery</a></li>
           <li><a href="booking.html" data-key="contact">Contact</a></li>

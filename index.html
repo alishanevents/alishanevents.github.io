@@ -21,14 +21,37 @@
       <img src="images/MaroonLogo.svg" alt="Alishan Events Logo" />
     </div>
 
-    <div class="lang-toggle">
+    <!-- <div class="lang-toggle">
       <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
       <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
+    </div> -->
+
+    <!-- <div class="switch-wrapper">
+      <label class="rocker rocker-small" for="switch-yes-no">
+        <input type="checkbox" id="switch-yes-no" onchange="toggleLang()">
+        <span class="switch-left" data-key="EN" data-lang="en">EN</span>
+        <span class="switch-right" data-key="EN" data-lang="bn">BN</span>
+      </label>
+    </div> -->
+
+
+    <div class="lang-switch-container">
+      <div class="switch-wrapper">
+        <label class="rocker rocker-small" for="switch-yes-no">
+          <input type="checkbox" id="switch-yes-no" onchange="toggleLang()">
+          <span class="switch-left">BN</span>
+          <span class="switch-right">EN</span>
+        </label>
+      </div>
     </div>
 
     <div class="welcome-content">
-      <h1 class="reveal" data-key="site_name">Alishan Events</h1>
-      <p class="reveal" data-key="tagline">We Crave Pefection</p>
+      <div class="glitch-wrapper">
+        <div class="glitch" data-glitch="Alishan Events">
+          Alishan Events
+        </div>
+      </div>
+      <p class="reveal">We Crave Pefection</p>
 
       <button class="primary-btn" onclick="location.href = '#works'" data-key="explore_services">
         Explore Services
@@ -146,6 +169,10 @@
         <div class="rating" data-key="review3_rating">⭐⭐⭐⭐⭐</div>
       </div>
     </div>
+
+    <button class="primary-btn" id="view_more_btn" data-key="more_reviews">
+        More Reviews
+      </button>
   </section>
 
   <footer class="footer explore">

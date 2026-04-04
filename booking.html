@@ -18,9 +18,14 @@
 
   <!-- HERO SECTION -->
   <section class="welcome" style="padding: 100px 20px; background: linear-gradient(125deg, #FF6B35, #0B0C10);">
-    <div class="lang-toggle">
-      <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
-      <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
+    <div class="lang-switch-container">
+      <div class="switch-wrapper">
+        <label class="rocker rocker-small" for="switch-yes-no">
+          <input type="checkbox" id="switch-yes-no" onchange="toggleLang()">
+          <span class="switch-left">BN</span>
+          <span class="switch-right">EN</span>
+        </label>
+      </div>
     </div>
     <div class="welcome-content">
       <h1 data-key="booking_page">Book Your Event</h1>
