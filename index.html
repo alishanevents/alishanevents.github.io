@@ -1,39 +1,28 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alishan Events</title>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Baloo+Da+2:wght@400;600&display=swap"
-    rel="stylesheet">
+  <title>Alishan Events — We Crave Perfection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div id="page-transition"></div>
 
-  <!-- WELCOME SECTION -->
-
+  <!-- ══════════════════════════════════
+       HERO / WELCOME
+  ══════════════════════════════════ -->
   <section class="welcome" id="welcome">
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
 
     <div class="logo">
       <img src="images/MaroonLogo.svg" alt="Alishan Events Logo" />
     </div>
-
-    <!-- <div class="lang-toggle">
-      <button onclick="setLang('en')" class="primary-btn" id="en">EN</button>
-      <button onclick="setLang('bn')" class="primary-btn" id="bn">BN</button>
-    </div> -->
-
-    <!-- <div class="switch-wrapper">
-      <label class="rocker rocker-small" for="switch-yes-no">
-        <input type="checkbox" id="switch-yes-no" onchange="toggleLang()">
-        <span class="switch-left" data-key="EN" data-lang="en">EN</span>
-        <span class="switch-right" data-key="EN" data-lang="bn">BN</span>
-      </label>
-    </div> -->
-
 
     <div class="lang-switch-container">
       <div class="switch-wrapper">
@@ -46,147 +35,188 @@
     </div>
 
     <div class="welcome-content">
-      <div class="glitch-wrapper">
-        <div class="glitch" data-glitch="Alishan Events">
-          Alishan Events
-        </div>
-      </div>
-      <p class="reveal">We Crave Pefection</p>
+      <div class="hero-badge">✦ Premium Event Management ✦</div>
 
-      <button class="primary-btn" onclick="location.href = '#works'" data-key="explore_services">
+      <div class="glitch-wrapper">
+        <div class="glitch" data-glitch="Alishan Events">Alishan Events</div>
+      </div>
+
+      <p class="reveal" style="font-size:clamp(16px,2.2vw,22px); color:rgba(253,246,227,0.8); margin-bottom:36px; font-style:italic; letter-spacing:1px;">
+        We Crave Perfection
+      </p>
+
+      <button class="primary-btn" onclick="location.href='#services'" data-key="explore_services">
         Explore Services
       </button>
     </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"></div>
+      <span>Scroll</span>
+    </div>
   </section>
 
-  <!-- SERVICES SECTION -->
+  <!-- ══════════════════════════════════
+       STATS
+  ══════════════════════════════════ -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="500" data-suffix="+">0+</span>
+        <div class="stat-label" data-key="events_completed">Events Completed</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:0.1s">
+        <span class="stat-number" data-target="300" data-suffix="+">0+</span>
+        <div class="stat-label" data-key="happy_clients">Happy Clients</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:0.2s">
+        <span class="stat-number" data-target="8" data-suffix="">0</span>
+        <div class="stat-label" data-key="years_experience">Years Experience</div>
+      </div>
+      <div class="stat-item reveal" style="transition-delay:0.3s">
+        <span class="stat-number" data-target="12" data-suffix="">0</span>
+        <div class="stat-label" data-key="cities_served">Cities Served</div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ══════════════════════════════════
+       SERVICES
+  ══════════════════════════════════ -->
   <section class="services" id="services">
-    <h2 data-key="our_services">Our Services</h2>
+    <h2 data-key="our_services" class="reveal">Our Services</h2>
 
     <div class="services-wrapper">
       <button class="scroll-btn left">&#10094;</button>
 
       <div class="services-scroll" id="services-scroll">
-        <div class="service-card reveal">
+
+        <div class="service-card reveal" style="--i:0">
           <h3 data-key="wedding_events">Wedding Events</h3>
-
-          <p data-key="wedding_description">
-            Luxury wedding planning with premium decoration and lighting.
-          </p>
-
+          <p data-key="wedding_description">Luxury wedding planning with premium decoration and lighting.</p>
           <a href="wedding.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
-        <div class="service-card reveal">
+        <div class="service-card reveal" style="--i:1; transition-delay:0.1s">
           <h3 data-key="corporate_events">Corporate Events</h3>
-
-          <p data-key="corporate_description">
-            Professional conferences and corporate event management.
-          </p>
-
+          <p data-key="corporate_description">Professional conferences and corporate event management.</p>
           <a href="corporate.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
-        <div class="service-card reveal">
+        <div class="service-card reveal" style="--i:2; transition-delay:0.2s">
           <h3 data-key="birthday_events">Birthday Events</h3>
-
-          <p data-key="birthday_description">
-            Stylish and fun birthday celebrations with custom themes,
-            decoration, and entertainment.
-          </p>
-
+          <p data-key="birthday_description">Stylish and fun birthday celebrations with custom themes, decoration, and entertainment.</p>
           <a href="birthday.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
-        <div class="service-card reveal">
+        <div class="service-card reveal" style="--i:3; transition-delay:0.3s">
           <h3 data-key="boro_somabesh">Large Gatherings</h3>
-
-          <p data-key="boro_somabesh_description">
-            Expert management of large-scale gatherings, social events, and
-            community programs with seamless execution.
-          </p>
-
+          <p data-key="boro_somabesh_description">Expert management of large-scale gatherings, social events, and community programs with seamless execution.</p>
           <a href="gathering.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
-        <div class="service-card reveal">
+        <div class="service-card reveal" style="--i:4; transition-delay:0.4s">
           <h3 data-key="concert_and_parties">Concert & Parties</h3>
-
-          <p data-key="concert_and_parties_description">
-            Energetic concerts and unforgettable celebrations.
-          </p>
-
+          <p data-key="concert_and_parties_description">Energetic concerts and unforgettable celebrations.</p>
           <a href="concert.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
+
       </div>
 
       <button class="scroll-btn right">&#10095;</button>
     </div>
   </section>
 
-  <!-- BOOK EVENT SECTION -->
+  <!-- ══════════════════════════════════
+       HOW WE WORK
+  ══════════════════════════════════ -->
+  <section class="process">
+    <h2 class="reveal" style="font-family:'Cormorant Garamond',serif; font-size:clamp(28px,4vw,48px); color:#f9a826; margin-bottom:8px;">How We Work</h2>
+    <p class="reveal" style="color:rgba(253,246,227,0.55); margin-bottom:48px; transition-delay:0.1s;">From your first call to the final curtain call</p>
 
-  <section class="booking" id="booking">
-    <h2 data-key="book_your_event">Book Your Event</h2>
-
-    <button class="gold-btn" data-key="book_now" onclick="location.href='booking.html'">Book Now</button>
-
-  </section>
-
-  <!-- OUR WORKS SECTION -->
-
-  <section class="works" id="works">
-    <h2 data-key="some_of_our_works">Some of Our Works</h2>
-
-    <div class="works-grid">
-      <div class="work"><img src="images/dec1.png" alt="Decoration Image"></div>
-      <div class="work"><img src="images/dec2.jpg" alt="Decoration Image"></div>
-      <div class="work"><img src="images/dec3.jpg" alt="Decoration Image"></div>
+    <div class="process-steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h4>Consultation</h4>
+        <p>We listen to your vision and understand every detail</p>
+      </div>
+      <div class="step reveal" style="transition-delay:0.15s">
+        <div class="step-num">2</div>
+        <h4>Planning</h4>
+        <p>Our team crafts a tailored event blueprint</p>
+      </div>
+      <div class="step reveal" style="transition-delay:0.3s">
+        <div class="step-num">3</div>
+        <h4>Execution</h4>
+        <p>Flawless setup and management on the day</p>
+      </div>
+      <div class="step reveal" style="transition-delay:0.45s">
+        <div class="step-num">4</div>
+        <h4>Memories</h4>
+        <p>Unforgettable moments that last a lifetime</p>
+      </div>
     </div>
   </section>
 
-  <!-- They say -->
+  <!-- ══════════════════════════════════
+       BOOK EVENT
+  ══════════════════════════════════ -->
+  <section class="booking" id="booking">
+    <div class="booking-inner">
+      <h2 data-key="book_your_event" class="reveal">Book Your Event</h2>
+      <p class="reveal" style="transition-delay:0.1s">Let us turn your vision into an unforgettable experience.</p>
+      <button class="gold-btn reveal" style="transition-delay:0.2s" data-key="book_now" onclick="location.href='booking.html'">Book Now</button>
+    </div>
+  </section>
 
-  <!-- ---------- CUSTOMER REVIEWS ---------- -->
-  <!-- ---------- CUSTOMER REVIEWS ---------- -->
+  <!-- ══════════════════════════════════
+       OUR WORKS
+  ══════════════════════════════════ -->
+  <section class="works" id="works">
+    <h2 data-key="some_of_our_works" class="reveal">Some of Our Works</h2>
+    <div class="works-grid">
+      <div class="work reveal"><img src="images/dec1.png" alt="Decoration Image"></div>
+      <div class="work reveal" style="transition-delay:0.12s"><img src="images/dec2.jpg" alt="Decoration Image"></div>
+      <div class="work reveal" style="transition-delay:0.24s"><img src="images/dec3.jpg" alt="Decoration Image"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       REVIEWS
+  ══════════════════════════════════ -->
   <section class="reviews">
-    <h2 data-key="reviews_title">What Our Customers Say</h2>
+    <h2 data-key="reviews_title" class="reveal">What Our Customers Say</h2>
     <div class="reviews-grid">
-      <div class="review-card">
+      <div class="review-card reveal">
         <p data-key="review1_text">"Alishan Events made my wedding unforgettable! Highly recommend."</p>
         <h4 data-key="review1_author">– Sara Jahan</h4>
         <div class="rating" data-key="review1_rating">⭐⭐⭐⭐⭐</div>
       </div>
-      <div class="review-card">
+      <div class="review-card reveal" style="transition-delay:0.15s">
         <p data-key="review2_text">"Professional, timely, and creative. The event went smoothly thanks to them."</p>
         <h4 data-key="review2_author">– Borshon</h4>
         <div class="rating" data-key="review2_rating">⭐⭐⭐⭐⭐</div>
       </div>
-      <div class="review-card">
+      <div class="review-card reveal" style="transition-delay:0.3s">
         <p data-key="review3_text">"Amazing decorations and excellent customer service. Will use again!"</p>
         <h4 data-key="review3_author">– Sahariar Kibria</h4>
         <div class="rating" data-key="review3_rating">⭐⭐⭐⭐⭐</div>
       </div>
     </div>
-
-    <button class="primary-btn" id="view_more_btn" data-key="more_reviews">
-        More Reviews
-      </button>
+    <button class="primary-btn reveal" id="view_more_btn" data-key="more_reviews" style="transition-delay:0.2s">More Reviews</button>
   </section>
 
-  <footer class="footer explore">
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="footer">
     <div class="footer-top">
-      <div class="footer-section">
+      <div class="footer-section reveal-left">
         <img src="images/whiteLogo.svg" alt="Alishan Events Logo" class="footer-logo" />
         <h3>About Alishan Events</h3>
-        <p data-key="about_alishan_events_description">
-          We craft luxury weddings, corporate events, concerts, and
-          unforgettable celebrations with perfection.
-        </p>
+        <p data-key="about_alishan_events_description">We craft luxury weddings, corporate events, concerts, and unforgettable celebrations with perfection.</p>
       </div>
-
-      <div class="footer-section">
+      <div class="footer-section reveal" style="transition-delay:0.1s">
         <h3 data-key="quick_links">Quick Links</h3>
         <ul>
           <li><a href="#welcome" data-key="home">Home</a></li>
@@ -195,24 +225,17 @@
           <li><a href="booking.html" data-key="contact">Contact</a></li>
         </ul>
       </div>
-
-      <div class="footer-section">
+      <div class="footer-section reveal-right">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
-          <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
-          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg"
-              alt=""></a>
+          <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt="Facebook"></a>
+          <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt="Instagram"></a>
+          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt="WhatsApp"></a>
         </div>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <p>
-        © 2026 <span style="color: #f1d586; font-size: 13px;"><b>Alishan Events</b></span>. All Rights Reserved. Sub
-        brand by <span style="color: #ddab22; font-size: 13px;"><b>Alishan</b></span>
-        Developed by <span style="color: #651a9f; font-size: 13px;"><b>RAMS Tech</b>
-      </p>
+      <p>© 2026 <span style="color:#f1d586"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span style="color:#ddab22"><b>Alishan</b></span> · Developed by <span style="color:#9b59f5"><b>RAMS Tech</b></span></p>
     </div>
   </footer>
 
@@ -221,7 +244,5 @@
   </a>
 
   <script src="script.js"></script>
-
 </body>
-
 </html>

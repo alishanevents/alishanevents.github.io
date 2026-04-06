@@ -1,25 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Large Gatherings | Alishan Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div id="page-transition"></div>
-  <!-- BACK BUTTON -->
-  <div class="logo">
-    <img src="images/whiteLogo.svg" alt="Alishan Events Logo" />
-  </div>
 
-  <!-- HERO SECTION -->
-  <section class="welcome" style="
-        padding: 100px 20px;
-        background: linear-gradient(125deg, #1f8a70, #0b0c10);
-      ">
+  <section class="welcome" style="min-height:70vh; background: linear-gradient(125deg, #1f8a70 0%, #0b0c10 100%);">
+    <div class="orb orb-1" style="background:radial-gradient(circle,rgba(31,138,112,0.35),transparent)"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="logo">
+      <img src="images/whiteLogo.svg" alt="Alishan Events Logo" />
+    </div>
     <div class="lang-switch-container">
       <div class="switch-wrapper">
         <label class="rocker rocker-small" for="switch-yes-no">
@@ -30,98 +27,58 @@
       </div>
     </div>
     <div class="welcome-content">
+      <div class="hero-badge">✦ Alishan Events ✦</div>
       <h1 data-key="large_gatherings">Large Gatherings</h1>
-      <p data-key="large_gatherings_description">
-        Seamless planning for large-scale events with premium decor,
-        logistics, and full entertainment coordination.
-      </p>
-      <button class="primary-btn" onclick="location.href = '#services'" data-key="our_services">
-        Our Services
-      </button>
+      <p data-key="large_gatherings_description">Seamless planning for large-scale events with premium decor, logistics, and full entertainment coordination.</p>
+      <button class="primary-btn" onclick="location.href='#services'" data-key="our_services">Our Services</button>
     </div>
   </section>
 
-  <!-- SERVICES -->
   <section class="services" id="services">
-    <h2 data-key="our_services">Our Services</h2>
-
+    <h2 data-key="our_services" class="reveal">Our Services</h2>
     <div class="services-wrapper">
-      <button class="scroll-btn left" data-key="scroll_left">&#10094;</button>
-
+      <button class="scroll-btn left">&#10094;</button>
       <div class="services-scroll" id="services-scroll">
-        <div class="service-card">
+        <div class="service-card reveal">
           <h3 data-key="venue_setup">Venue Setup & Decor</h3>
-          <p data-key="venue_setup_desc">
-            Spacious venue arrangements with elegant decor tailored for large
-            crowds.
-          </p>
+          <p data-key="venue_setup_desc">Spacious venue arrangements with elegant decor tailored for large crowds.</p>
         </div>
-
-        <div class="service-card">
+        <div class="service-card reveal" style="transition-delay:0.12s">
           <h3 data-key="catering_large">Catering & Hospitality</h3>
-          <p data-key="catering_large_desc">
-            High-quality catering solutions for hundreds of guests with
-            diverse menus.
-          </p>
+          <p data-key="catering_large_desc">High-quality catering solutions for hundreds of guests with diverse menus.</p>
         </div>
-
-        <div class="service-card">
+        <div class="service-card reveal" style="transition-delay:0.24s">
           <h3 data-key="audio_lighting">Audio & Lighting</h3>
-          <p data-key="audio_lighting_desc">
-            Professional sound, lighting, and stage management for large
-            events.
-          </p>
+          <p data-key="audio_lighting_desc">Professional sound, lighting, and stage management for large events.</p>
         </div>
-
-        <div class="service-card">
+        <div class="service-card reveal" style="transition-delay:0.36s">
           <h3 data-key="event_entertainment">Entertainment & Activities</h3>
-          <p data-key="event_entertainment_desc">
-            Live performances, interactive activities, and crowd engagement
-            for unforgettable experiences.
-          </p>
+          <p data-key="event_entertainment_desc">Live performances, interactive activities, and crowd engagement for unforgettable experiences.</p>
         </div>
       </div>
-
-      <button class="scroll-btn right" data-key="scroll_right">
-        &#10095;
-      </button>
+      <button class="scroll-btn right">&#10095;</button>
     </div>
   </section>
 
-  <!-- GALLERY -->
   <section class="works" id="works">
-    <h2 data-key="large_gatherings_gallery">Large Gatherings Gallery</h2>
+    <h2 data-key="large_gatherings_gallery" class="reveal">Large Gatherings Gallery</h2>
     <div class="works-grid">
-      <div class="work">
-        <img src="images/dec1.png" alt="Large Gathering" />
-      </div>
-      <div class="work">
-        <img src="images/dec2.jpg" alt="Large Gathering" />
-      </div>
-      <div class="work">
-        <img src="images/dec3.jpg" alt="Large Gathering" />
-      </div>
-
-      <div class="gold-btn-div" style="grid-column: 1 / -1">
-        <button class="gold-btn" data-key="book_now" id="gold-btn" onclick="location.href='booking.html'">
-          Book Now
-        </button>
+      <div class="work reveal"><img src="images/dec1.png" alt="Large Gathering"></div>
+      <div class="work reveal" style="transition-delay:0.12s"><img src="images/dec2.jpg" alt="Large Gathering"></div>
+      <div class="work reveal" style="transition-delay:0.24s"><img src="images/dec3.jpg" alt="Large Gathering"></div>
+      <div class="gold-btn-div" style="grid-column: 1 / -1;">
+        <button class="gold-btn reveal" data-key="book_now" onclick="location.href='booking.html'">Book Now</button>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer explore">
+  <footer class="footer">
     <div class="footer-top">
       <div class="footer-section">
         <img src="images/whiteLogo.svg" alt="Alishan Events Logo" class="footer-logo" />
         <h3>About Alishan Events</h3>
-        <p data-key="about_alishan_events_description">
-          We craft luxury weddings, corporate events, concerts, and
-          unforgettable celebrations with perfection.
-        </p>
+        <p data-key="about_alishan_events_description">We craft luxury weddings, corporate events, concerts, and unforgettable celebrations with perfection.</p>
       </div>
-
       <div class="footer-section">
         <h3 data-key="quick_links">Quick Links</h3>
         <ul>
@@ -131,32 +88,23 @@
           <li><a href="booking.html" data-key="contact">Contact</a></li>
         </ul>
       </div>
-
       <div class="footer-section">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt=""></a>
-          <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt=""></a>
-          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg"
-              alt=""></a>
+          <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt="Facebook"></a>
+          <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt="Instagram"></a>
+          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt="WhatsApp"></a>
         </div>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <p>
-        © 2026 <span style="color: #f1d586; font-size: 13px;"><b>Alishan Events</b></span>. All Rights Reserved. Sub
-        brand by <span style="color: #ddab22; font-size: 13px;"><b>Alishan</b></span>
-        Developed by <span style="color: #651a9f; font-size: 13px;"><b>RAMS Tech</b>
-      </p>
+      <p>© 2026 <span style="color:#f1d586"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span style="color:#ddab22"><b>Alishan</b></span> · Developed by <span style="color:#9b59f5"><b>RAMS Tech</b></span></p>
     </div>
   </footer>
 
   <a href="https://wa.me/8801926659041" target="_blank" class="whatsapp-float">
     <img src="images/whatsappFloatingLogo1.svg" alt="WhatsApp" />
   </a>
-
   <script src="script.js"></script>
 </body>
-
 </html>
