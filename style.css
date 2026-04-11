@@ -1634,11 +1634,9 @@ body.bn * {
   position: relative;
   overflow: hidden;
 
-  background: linear-gradient(
-    125deg,
-    #111827 0%,
-    #0b0c10 100%
-  );
+  background: linear-gradient(125deg,
+      #111827 0%,
+      #0b0c10 100%);
 }
 
 /* mesh glow like hero */
@@ -1649,17 +1647,13 @@ body.bn * {
   inset: 0;
 
   background:
-    radial-gradient(
-      ellipse 80% 60% at 20% 40%,
-      rgba(249,168,38,0.18),
-      transparent 60%
-    ),
+    radial-gradient(ellipse 80% 60% at 20% 40%,
+      rgba(249, 168, 38, 0.18),
+      transparent 60%),
 
-    radial-gradient(
-      ellipse 60% 80% at 80% 60%,
-      rgba(31,138,112,0.14),
-      transparent 60%
-    );
+    radial-gradient(ellipse 60% 80% at 80% 60%,
+      rgba(31, 138, 112, 0.14),
+      transparent 60%);
 
   animation: mesh-shift 8s ease-in-out infinite alternate;
   z-index: 0;
@@ -1680,11 +1674,9 @@ body.bn * {
   height: 260px;
 
   background:
-    radial-gradient(
-      circle,
-      rgba(249,168,38,0.25),
-      transparent
-    );
+    radial-gradient(circle,
+      rgba(249, 168, 38, 0.25),
+      transparent);
 
   top: -60px;
   left: -60px;
@@ -1697,11 +1689,9 @@ body.bn * {
   height: 220px;
 
   background:
-    radial-gradient(
-      circle,
-      rgba(31,138,112,0.2),
-      transparent
-    );
+    radial-gradient(circle,
+      rgba(31, 138, 112, 0.2),
+      transparent);
 
   bottom: -40px;
   right: -40px;
@@ -1727,18 +1717,15 @@ body.bn * {
   border-radius: 18px;
 
   background:
-    linear-gradient(
-      135deg,
-      rgba(26,29,43,0.9),
-      rgba(44,47,58,0.6)
-    );
+    linear-gradient(135deg,
+      rgba(26, 29, 43, 0.9),
+      rgba(44, 47, 58, 0.6));
 
   border:
-    1px solid
-    rgba(249,168,38,0.12);
+    1px solid rgba(249, 168, 38, 0.12);
 
   box-shadow:
-    0 24px 80px rgba(0,0,0,0.5);
+    0 24px 80px rgba(0, 0, 0, 0.5);
 
   backdrop-filter: blur(12px);
 
@@ -1779,11 +1766,10 @@ body.bn * {
   border-radius: 8px;
 
   border:
-    1px solid
-    rgba(249,168,38,0.15);
+    1px solid rgba(249, 168, 38, 0.15);
 
   background:
-    rgba(0,0,0,0.35);
+    rgba(0, 0, 0, 0.35);
 
   color: var(--cream);
 
@@ -1804,8 +1790,7 @@ body.bn * {
     1px solid var(--gold);
 
   box-shadow:
-    0 0 12px
-    rgba(249,168,38,0.35);
+    0 0 12px rgba(249, 168, 38, 0.35);
 }
 
 
@@ -1842,8 +1827,7 @@ body.bn * {
   transform: translateY(-2px);
 
   box-shadow:
-    0 10px 28px
-    rgba(249,168,38,0.45);
+    0 10px 28px rgba(249, 168, 38, 0.45);
 }
 
 
@@ -1882,7 +1866,7 @@ body.bn * {
   font-size: 14px;
 
   color:
-    rgba(253,246,227,0.7);
+    rgba(253, 246, 227, 0.7);
 }
 
 .auth-link a {
@@ -1895,4 +1879,169 @@ body.bn * {
 .auth-link a:hover {
 
   text-decoration: underline;
+}
+
+/* ============================================================
+   AUTH MOBILE RESPONSIVE FIX
+============================================================ */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+  .auth-card {
+
+    max-width: 420px;
+
+    padding: 38px 28px;
+
+    margin: 20px;
+
+  }
+
+  .auth-card h2 {
+
+    font-size: 34px;
+
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .auth-section {
+
+    padding: 20px;
+
+    align-items: center;
+
+  }
+
+
+  /* Card */
+
+  .auth-card {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    padding: 32px 22px;
+
+    margin: 12px;
+
+    border-radius: 16px;
+
+  }
+
+
+  /* Title */
+
+  .auth-card h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 20px;
+
+  }
+
+
+  /* Inputs */
+
+  .auth-input {
+
+    padding: 12px 14px;
+
+    font-size: 14px;
+
+  }
+
+
+  /* Buttons */
+
+  .auth-btn {
+
+    padding: 13px;
+
+    font-size: 14px;
+
+  }
+
+
+  /* Guest button spacing */
+
+  .guest-btn {
+
+    margin-top: 10px;
+
+  }
+
+
+  /* Links */
+
+  .auth-link {
+
+    font-size: 13px;
+
+    margin-top: 14px;
+
+  }
+
+
+  /* Reduce orb sizes */
+
+  .auth-orb-1 {
+
+    width: 160px;
+    height: 160px;
+
+    top: -40px;
+    left: -40px;
+
+  }
+
+  .auth-orb-2 {
+
+    width: 140px;
+    height: 140px;
+
+    bottom: -30px;
+    right: -30px;
+
+  }
+
+}
+
+
+/* Small phones */
+
+@media (max-width: 400px) {
+
+  .auth-card {
+
+    padding: 26px 18px;
+
+  }
+
+  .auth-card h2 {
+
+    font-size: 24px;
+
+  }
+
+  .auth-input {
+
+    font-size: 13px;
+
+  }
+
+  .auth-btn {
+
+    font-size: 13px;
+
+  }
+
 }
