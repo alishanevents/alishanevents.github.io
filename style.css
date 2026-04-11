@@ -2075,8 +2075,6 @@ body.bn * {
 
   filter: brightness(0) invert(1);
 
-  border: 1px solid red;
-
   transition: transform 0.3s ease;
 
 }
