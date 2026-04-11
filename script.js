@@ -352,6 +352,8 @@ const translations = {
     happy_clients: "Happy Clients",
     years_experience: "Years Experience",
     cities_served: "Cities Served",
+    login: 'Log In',
+    signup: 'Sign Up',
   },
   bn: {
     site_name: "আলিশান ইভেন্টস",
@@ -453,6 +455,8 @@ const translations = {
     happy_clients: "সন্তুষ্ট ক্লায়েন্ট",
     years_experience: "বছরের অভিজ্ঞতা",
     cities_served: "শহরে সেবা",
+    login: 'লগইন',
+    signup: 'সাইনআপ',
   }
 };
 

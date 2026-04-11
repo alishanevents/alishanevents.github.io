@@ -1621,3 +1621,278 @@ body.bn * {
   padding: 0;
   background: none;
 }
+
+/* ============================================================
+   AUTH PAGES (LOGIN / SIGNUP)
+============================================================ */
+
+.auth-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    125deg,
+    #111827 0%,
+    #0b0c10 100%
+  );
+}
+
+/* mesh glow like hero */
+
+.auth-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      ellipse 80% 60% at 20% 40%,
+      rgba(249,168,38,0.18),
+      transparent 60%
+    ),
+
+    radial-gradient(
+      ellipse 60% 80% at 80% 60%,
+      rgba(31,138,112,0.14),
+      transparent 60%
+    );
+
+  animation: mesh-shift 8s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+
+/* floating orbs */
+
+.auth-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.auth-orb-1 {
+  width: 260px;
+  height: 260px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(249,168,38,0.25),
+      transparent
+    );
+
+  top: -60px;
+  left: -60px;
+
+  animation: float-orb 10s ease-in-out infinite;
+}
+
+.auth-orb-2 {
+  width: 220px;
+  height: 220px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(31,138,112,0.2),
+      transparent
+    );
+
+  bottom: -40px;
+  right: -40px;
+
+  animation: float-orb 12s ease-in-out infinite reverse;
+}
+
+
+
+/* glass card */
+
+.auth-card {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 420px;
+
+  padding: 48px 42px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(26,29,43,0.9),
+      rgba(44,47,58,0.6)
+    );
+
+  border:
+    1px solid
+    rgba(249,168,38,0.12);
+
+  box-shadow:
+    0 24px 80px rgba(0,0,0,0.5);
+
+  backdrop-filter: blur(12px);
+
+  animation:
+    hero-in 1s var(--ease-out) both;
+}
+
+
+
+/* title */
+
+.auth-card h2 {
+
+  font-family:
+    var(--font-display);
+
+  font-size: 40px;
+
+  text-align: center;
+
+  color: var(--gold);
+
+  margin-bottom: 24px;
+}
+
+
+
+/* input */
+
+.auth-input {
+
+  width: 100%;
+
+  padding: 14px 16px;
+
+  margin-bottom: 18px;
+
+  border-radius: 8px;
+
+  border:
+    1px solid
+    rgba(249,168,38,0.15);
+
+  background:
+    rgba(0,0,0,0.35);
+
+  color: var(--cream);
+
+  font-size: 15px;
+
+  transition:
+    border 0.3s,
+    box-shadow 0.3s;
+}
+
+
+
+.auth-input:focus {
+
+  outline: none;
+
+  border:
+    1px solid var(--gold);
+
+  box-shadow:
+    0 0 12px
+    rgba(249,168,38,0.35);
+}
+
+
+
+/* buttons */
+
+.auth-btn {
+
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 14px;
+
+  font-weight: 700;
+
+  border-radius: 6px;
+
+  border: none;
+
+  cursor: pointer;
+
+  background: var(--gold);
+
+  color: var(--dark);
+
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.auth-btn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 28px
+    rgba(249,168,38,0.45);
+}
+
+
+
+/* guest button */
+
+.guest-btn {
+
+  margin-top: 12px;
+
+  background: transparent;
+
+  border:
+    1.5px solid var(--gold);
+
+  color: var(--gold);
+}
+
+.guest-btn:hover {
+
+  background: var(--gold);
+
+  color: var(--dark);
+}
+
+
+
+/* link */
+
+.auth-link {
+
+  margin-top: 18px;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  color:
+    rgba(253,246,227,0.7);
+}
+
+.auth-link a {
+
+  color: var(--gold);
+
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+
+  text-decoration: underline;
+}

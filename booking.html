@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Booking | Alishan Events</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Hind+Siliguri:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- HERO -->
@@ -32,16 +36,19 @@
     <div class="welcome-content">
       <div class="hero-badge">✦ Alishan Events ✦</div>
       <h1 data-key="booking_page">Book Your Event</h1>
-      <p data-key="booking_description">Share your details below and we will help plan your perfect celebration with our premium services.</p>
+      <p data-key="booking_description">Share your details below and we will help plan your perfect celebration with our
+        premium services.</p>
     </div>
   </section>
 
   <!-- BOOKING FORM -->
   <section class="bookingform" style="text-align:center">
     <h2 data-key="start_journey" class="reveal">Start Your Journey With Us</h2>
-    <p data-key="booking_instructions" class="reveal" style="transition-delay:0.1s">Fill out the form and we'll contact you to discuss your event details, availability, and ideas.</p>
+    <p data-key="booking_instructions" class="reveal" style="transition-delay:0.1s">Fill out the form and we'll contact
+      you to discuss your event details, availability, and ideas.</p>
 
-    <form class="contact-form reveal" style="transition-delay:0.2s" action="https://api.web3forms.com/submit" method="POST">
+    <form class="contact-form reveal" style="transition-delay:0.2s" action="https://api.web3forms.com/submit"
+      method="POST">
       <input type="hidden" name="access_key" value="db1a0b60-4aef-416b-aa5a-d14ae4933194">
 
       <div class="form-group">
@@ -98,7 +105,8 @@
       <div class="footer-section">
         <img src="images/whiteLogo.svg" alt="Alishan Events Logo" class="footer-logo" />
         <h3>About Alishan Events</h3>
-        <p data-key="about_alishan_events_description">We craft luxury weddings, corporate events, concerts, and unforgettable celebrations with perfection.</p>
+        <p data-key="about_alishan_events_description">We craft luxury weddings, corporate events, concerts, and
+          unforgettable celebrations with perfection.</p>
       </div>
       <div class="footer-section">
         <h3 data-key="quick_links">Quick Links</h3>
@@ -107,6 +115,8 @@
           <li><a href="#" data-key="services">Services</a></li>
           <li><a href="index.html#works" data-key="gallery">Gallery</a></li>
           <li><a href="booking.html" data-key="contact">Contact</a></li>
+          <li><a href="" data-key="login">Log In</a></li>
+          <li><a href="" data-key="signup">Sign Up</a></li>
         </ul>
       </div>
       <div class="footer-section">
@@ -114,12 +124,15 @@
         <div class="social-icons">
           <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt="Facebook"></a>
           <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt="Instagram"></a>
-          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt="WhatsApp"></a>
+          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg"
+              alt="WhatsApp"></a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 <span style="color:#f1d586"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span style="color:#ddab22"><b>Alishan</b></span> · Developed by <span style="color:#9b59f5"><b>RAMS Tech</b></span></p>
+      <p>© 2026 <span style="color:#f1d586"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span
+          style="color:#ddab22"><b>Alishan</b></span> · Developed by <span style="color:#9b59f5"><b>RAMS Tech</b></span>
+      </p>
     </div>
   </footer>
 
@@ -127,6 +140,25 @@
     <img src="images/whatsappFloatingLogo1.svg" alt="WhatsApp" />
   </a>
 
+  <script>
+
+    // Protect booking page
+
+    let user =
+      JSON.parse(
+        localStorage.getItem("currentUser")
+      );
+
+    if (!user) {
+
+      window.location.href =
+        "login.html";
+
+    }
+
+  </script>
+
   <script src="script.js"></script>
 </body>
+
 </html>
