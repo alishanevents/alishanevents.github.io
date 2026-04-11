@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alishan Events — We Crave Perfection</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Hind+Siliguri:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ══════════════════════════════════
@@ -41,12 +46,19 @@
         <div class="glitch" data-glitch="Alishan Events">Alishan Events</div>
       </div>
 
-      <p class="reveal" style="font-size:clamp(16px,2.2vw,22px); color:rgba(253,246,227,0.8); margin-bottom:36px; font-style:italic; letter-spacing:1px;">
+      <p class="reveal"
+        style="font-size:clamp(16px,2.2vw,22px); color:rgba(253,246,227,0.8); margin-bottom:36px; font-style:italic; letter-spacing:1px;">
         We Crave Perfection
       </p>
 
-      <button class="primary-btn" onclick="location.href='#services'" data-key="explore_services">
-        Explore Services
+      <button class="primary-btn" id="facebook-page" onclick="window.open('https://www.facebook.com/alishanevents.bd','_blank')" data-key="facebook_page">
+        <img src="images/whiteLogo.svg" class="facebook-icon" alt="Facebook">
+
+        <span data-key="facebook_page">
+
+          Visit Facebook Page
+
+        </span>
       </button>
     </div>
 
@@ -62,19 +74,19 @@
   <section class="stats">
     <div class="stats-grid">
       <div class="stat-item reveal">
-        <span class="stat-number" data-target="500" data-suffix="+">0+</span>
+        <span class="stat-number" data-target="200" data-suffix="+">0+</span>
         <div class="stat-label" data-key="events_completed">Events Completed</div>
       </div>
       <div class="stat-item reveal" style="transition-delay:0.1s">
-        <span class="stat-number" data-target="300" data-suffix="+">0+</span>
+        <span class="stat-number" data-target="150" data-suffix="+">0+</span>
         <div class="stat-label" data-key="happy_clients">Happy Clients</div>
       </div>
       <div class="stat-item reveal" style="transition-delay:0.2s">
-        <span class="stat-number" data-target="8" data-suffix="">0</span>
+        <span class="stat-number" data-target="2" data-suffix="">0</span>
         <div class="stat-label" data-key="years_experience">Years Experience</div>
       </div>
       <div class="stat-item reveal" style="transition-delay:0.3s">
-        <span class="stat-number" data-target="12" data-suffix="">0</span>
+        <span class="stat-number" data-target="3" data-suffix="">0</span>
         <div class="stat-label" data-key="cities_served">Cities Served</div>
       </div>
     </div>
@@ -105,13 +117,15 @@
 
         <div class="service-card reveal" style="--i:2; transition-delay:0.2s">
           <h3 data-key="birthday_events">Birthday Events</h3>
-          <p data-key="birthday_description">Stylish and fun birthday celebrations with custom themes, decoration, and entertainment.</p>
+          <p data-key="birthday_description">Stylish and fun birthday celebrations with custom themes, decoration, and
+            entertainment.</p>
           <a href="birthday.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
         <div class="service-card reveal" style="--i:3; transition-delay:0.3s">
           <h3 data-key="boro_somabesh">Large Gatherings</h3>
-          <p data-key="boro_somabesh_description">Expert management of large-scale gatherings, social events, and community programs with seamless execution.</p>
+          <p data-key="boro_somabesh_description">Expert management of large-scale gatherings, social events, and
+            community programs with seamless execution.</p>
           <a href="gathering.html" class="card-btn" data-key="view_details">View Details</a>
         </div>
 
@@ -131,8 +145,11 @@
        HOW WE WORK
   ══════════════════════════════════ -->
   <section class="process">
-    <h2 class="reveal" style="font-family:'Cormorant Garamond',serif; font-size:clamp(28px,4vw,48px); color:#f9a826; margin-bottom:8px;">How We Work</h2>
-    <p class="reveal" style="color:rgba(253,246,227,0.55); margin-bottom:48px; transition-delay:0.1s;">From your first call to the final curtain call</p>
+    <h2 class="reveal"
+      style="font-family:'Cormorant Garamond',serif; font-size:clamp(28px,4vw,48px); color:#f9a826; margin-bottom:8px;">
+      How We Work</h2>
+    <p class="reveal" style="color:rgba(253,246,227,0.55); margin-bottom:48px; transition-delay:0.1s;">From your first
+      call to the final curtain call</p>
 
     <div class="process-steps">
       <div class="step reveal">
@@ -165,7 +182,8 @@
     <div class="booking-inner">
       <h2 data-key="book_your_event" class="reveal">Book Your Event</h2>
       <p class="reveal" style="transition-delay:0.1s">Let us turn your vision into an unforgettable experience.</p>
-      <button class="gold-btn reveal" style="transition-delay:0.2s" data-key="book_now" onclick="location.href='login.html'">Book Now</button>
+      <button class="gold-btn reveal" style="transition-delay:0.2s" data-key="book_now"
+        onclick="location.href='login.html'">Book Now</button>
     </div>
   </section>
 
@@ -203,7 +221,8 @@
         <div class="rating" data-key="review3_rating">⭐⭐⭐⭐⭐</div>
       </div>
     </div>
-    <button class="primary-btn reveal" id="view_more_btn" data-key="more_reviews" style="transition-delay:0.2s">More Reviews</button>
+    <button class="primary-btn reveal" id="view_more_btn" data-key="more_reviews" style="transition-delay:0.2s">More
+      Reviews</button>
   </section>
 
   <!-- ══════════════════════════════════
@@ -214,7 +233,8 @@
       <div class="footer-section reveal-left">
         <img src="images/whiteLogo.svg" alt="Alishan Events Logo" class="footer-logo" />
         <h3>About Alishan Events</h3>
-        <p data-key="about_alishan_events_description">We craft luxury weddings, corporate events, concerts, and unforgettable celebrations with perfection.</p>
+        <p data-key="about_alishan_events_description">We craft luxury weddings, corporate events, concerts, and
+          unforgettable celebrations with perfection.</p>
       </div>
       <div class="footer-section reveal" style="transition-delay:0.1s">
         <h3 data-key="quick_links">Quick Links</h3>
@@ -232,12 +252,15 @@
         <div class="social-icons">
           <a href="#" class="social" aria-label="Facebook"><img src="images/facebookLogo.svg" alt="Facebook"></a>
           <a href="#" class="social" aria-label="Instagram"><img src="images/instaramLogo.svg" alt="Instagram"></a>
-          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg" alt="WhatsApp"></a>
+          <a href="https://wa.me/8801926659041" class="social" aria-label="WhatsApp"><img src="images/whatsappLogo.svg"
+              alt="WhatsApp"></a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 <span style="color:#f1d586"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span style="color:#ddab22"><b>Alishan</b></span> · Developed by <span style="color:#9b59f5"><b>RAMS Tech</b></span></p>
+      <p>© 2026 <span style="color:#f1d586"><b>Alishan Events</b></span>. All Rights Reserved. Sub brand by <span
+          style="color:#ddab22"><b>Alishan</b></span> · Developed by <span style="color:#9b59f5"><b>RAMS Tech</b></span>
+      </p>
     </div>
   </footer>
 
@@ -247,4 +270,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

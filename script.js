@@ -255,7 +255,7 @@ const translations = {
   en: {
     site_name: "Alishan Events",
     tagline: "We Crave Perfection",
-    explore_services: "Explore Services",
+    facebook_page: "Visit Facebook Page",
     our_services: "Our Services",
     wedding_events: "Wedding Events",
     wedding_description: "Luxury wedding planning with premium decoration and lighting.",
@@ -358,7 +358,7 @@ const translations = {
   bn: {
     site_name: "আলিশান ইভেন্টস",
     tagline: "আমরা নিখুঁততাকে ভালোবাসি",
-    explore_services: "সার্ভিস দেখুন",
+    facebook_page: "ফেসবুক পেজ ভিজিট করুন",
     our_services: "আমাদের সেবাসমূহ",
     wedding_events: "বিয়ের আয়োজন",
     wedding_description: "প্রিমিয়াম ডেকোরেশন ও লাইটিংসহ বিলাসবহুল বিয়ের আয়োজন।",
